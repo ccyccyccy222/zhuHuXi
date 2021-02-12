@@ -1,0 +1,90 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 11/06/2018 06:04
+  	*/
+
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/Flaticon.eot");
+	src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/Flaticon.woff") format("woff"),
+	url("../fonts/Flaticon.ttf") format("truetype"),
+	url("../fonts/Flaticon.svg#Flaticon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+	font-style: normal;
+}
+
+.flaticon-cross:before { content: "\f100"; }
+.flaticon-baby:before { content: "\f101"; }
+.flaticon-doctor-2:before { content: "\f102"; }
+.flaticon-doctor-1:before { content: "\f103"; }
+.flaticon-eye:before { content: "\f104"; }
+.flaticon-drug:before { content: "\f105"; }
+.flaticon-user-md-symbol:before { content: "\f106"; }
+.flaticon-microscope:before { content: "\f107"; }
+.flaticon-medical-result:before { content: "\f108"; }
+.flaticon-instagram-1:before { content: "\f109"; }
+.flaticon-instagram-logo:before { content: "\f10a"; }
+.flaticon-facebook-logo-button:before { content: "\f10b"; }
+.flaticon-share-1:before { content: "\f10c"; }
+.flaticon-whatsapp:before { content: "\f10d"; }
+.flaticon-youtube-logo:before { content: "\f10e"; }
+.flaticon-instagram:before { content: "\f10f"; }
+.flaticon-facebook-logo-in-circular-button-outlined-social-symbol:before { content: "\f110"; }
+.flaticon-linkedin-logo:before { content: "\f111"; }
+.flaticon-google-plus:before { content: "\f112"; }
+.flaticon-youtube:before { content: "\f113"; }
+.flaticon-share:before { content: "\f114"; }
+.flaticon-twitter:before { content: "\f115"; }
+.flaticon-facebook-logo:before { content: "\f116"; }
+.flaticon-compass-with-white-needles:before { content: "\f117"; }
+.flaticon-google-earth:before { content: "\f118"; }
+.flaticon-navigation:before { content: "\f119"; }
+.flaticon-placeholder:before { content: "\f11a"; }
+.flaticon-location:before { content: "\f11b"; }
+.flaticon-mail:before { content: "\f11c"; }
+.flaticon-phone-symbol-of-an-auricular-inside-a-circle:before { content: "\f11d"; }
+.flaticon-house:before { content: "\f11e"; }
+.flaticon-smartphone-1:before { content: "\f11f"; }
+.flaticon-telephone-symbol-button:before { content: "\f120"; }
+.flaticon-smartphone:before { content: "\f121"; }
+.flaticon-internet-1:before { content: "\f122"; }
+.flaticon-internet:before { content: "\f123"; }
+.flaticon-car-first-aid-kit:before { content: "\f124"; }
+.flaticon-police-car:before { content: "\f125"; }
+.flaticon-ambulance-1:before { content: "\f126"; }
+.flaticon-ambulance:before { content: "\f127"; }
+.flaticon-hospital-ambulance:before { content: "\f128"; }
+.flaticon-big-ambulance-facing-left:before { content: "\f129"; }
+.flaticon-listening:before { content: "\f12a"; }
+.flaticon-ear:before { content: "\f12b"; }
+.flaticon-molar-inside-a-shield:before { content: "\f12c"; }
+.flaticon-tooth-1:before { content: "\f12d"; }
+.flaticon-tooth:before { content: "\f12e"; }
+.flaticon-biopsy:before { content: "\f12f"; }
+.flaticon-chemotherapy:before { content: "\f130"; }
+.flaticon-chemical-bond:before { content: "\f131"; }
+.flaticon-dna-1:before { content: "\f132"; }
+.flaticon-dna:before { content: "\f133"; }
+.flaticon-electrocardiogram:before { content: "\f134"; }
+.flaticon-shield:before { content: "\f135"; }
+.flaticon-doctor:before { content: "\f136"; }
+.flaticon-view:before { content: "\f137"; }
+.flaticon-pills:before { content: "\f138"; }
+.flaticon-hospital-buildings:before { content: "\f139"; }
+.flaticon-first-aid-kit:before { content: "\f13a"; }
+.flaticon-stethoscope:before { content: "\f13b"; }
+.flaticon-health:before { content: "\f13c"; }

@@ -1,0 +1,725 @@
+@media  screen and (max-width: 1366px) {
+}
+
+@media (max-width: 1199px) {
+    .header-bottom {
+      padding: 8px 0;
+    }
+    .logo a {
+      margin-top: 0;
+    }
+    .sm-mb-40 {
+      margin-bottom: 40px !important;
+    }
+    .my-team-col:hover img {
+        margin-top: 0;
+    }
+    .ht-address .irt-icon .icon {
+      height: 54px;
+      line-height: 54px;
+      width: 54px;
+    }
+
+    .ht-social ul li a {
+      border: medium none;
+      width: 30px;
+    }
+    .ht-social {
+      margin-right: 7px;
+    }
+    .dis-non-1199 {
+        display: none;
+    }
+    .about-section-s2 .contact-info {
+        margin-top: 30px;
+    }
+    .blog-content h3 a {
+    font-size: 15px;
+    line-height: 26px;
+    }
+    .footer-tags {
+    margin-top: -1px;
+    }
+    /* #menu is the original menu */
+    .js #menu {
+        display:none;
+    }
+
+    .js .slicknav_menu {
+        background-color: transparent;
+        display: block;
+        padding: 12px 5px;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        width: 25%;
+        z-index: 1000;
+    }
+
+    .slicknav_nav {
+        background-color: #214d63;
+    }
+
+    .slicknav_menu .slicknav_btn {
+        margin-bottom: 17px;
+    }
+
+    .icofont-simple-down:before {
+        display: none;
+    }
+
+    .divider-area .divider-content:after {
+        background-color: #f7f7f7;
+        content: "";
+        display: none;
+        height: 100%;
+        position: absolute;
+        right: -2px;
+        top: 1px;
+        transform: skewX(14deg);
+        width: 10%;
+      }
+        .gallery-item .hover-info h2 {
+            font-size: 16px;
+        }
+        .mb-20-1199 {
+      margin-bottom: 30px 
+    }
+    .section-title-s2 h2 {
+    font-size: 28px;
+        line-height: 41px;
+    }
+    .about-section-s2 .about-content h4 {
+    font-size: 18px;
+    }
+    /*single-doctor*/
+    .single-doctor .thumbnail .single-doctor-social .doctor-social {
+        top: calc(50% - 20px) !important;
+    }
+    .single-doctor:hover .thumbnail .single-doctor-social .doctor-social a {
+      margin-right: 4px;
+      padding: 4px 8px;
+    }
+
+   footer .footer-area .col-lg-4.col-md-4,
+   footer .footer-area .col-lg-2.col-md-2,
+   footer .footer-area .col-lg-2.col-md-2,
+   footer .footer-area .col-lg-4.col-md-4 {
+        display: inline-block;
+        float: right;
+        margin-bottom: 50px;
+        width: 50%;
+    }
+
+    .our-location {
+      left: -2%;
+      position: absolute;
+      width: 100%;
+    }
+
+    .single-pricing .content .details h4 {
+        font-size: 14px;
+    }
+
+    .single-pricing .thumbnail img {
+        max-width: none;
+        width: 100%;
+    }
+
+    .price-btn {
+        font-size: 14px;
+        padding: 14px 15px;
+        width: 100%;
+    }
+    .about-section .about-bg-img {
+        display: none;
+    }
+    .blog-meta ul li {
+        margin-left: 0;
+    }
+      
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /***appoinment-area ***/
+
+    .appoinment-form h2 {
+        font-size: 18px;
+    }
+
+    .appoinment-form form input[type="text"],
+    .appoinment-form form input[type="email"],
+    .appoinment-form form textarea,
+    .appoinment-form form .frm_select {
+        font-size: 13px;
+        font-weight: 600;
+        height: 44px;
+        padding: 0 8px;
+        width: 100%;
+    }
+
+    .appoinment-form form input[type="submit"] {
+        font-size: 14px;
+        font-weight: 600;
+        height: 38px;
+    }
+
+    /***single-doctor***/
+
+    .single-doctor .content .details h4 {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .single-doctor .content .details p {
+        font-size: 14px;
+    }
+
+    .btn-single {
+        font-size: 13px;
+    }
+
+    .single-doctor .content .details h4 a {
+        font-size: 13px;
+    }
+
+    /***section-title***/
+
+    .welcome-area .section-title h2 {
+        font-size: 26px;
+    }
+
+    /*divider-area*/
+
+    .divider-area .divider-content h3 {
+        font-size: 22px;
+    }
+
+    /*department-section*/
+
+    .department-section .department-thumb img {
+      width: 33%;
+    }
+
+    .department-section .tablist li a {
+      padding: 21px 30px;
+    }
+
+    .department-section .tablist .active a {
+      padding: 21px;
+    }
+
+    .testimonial-meta::before {
+        font-size: 28px;
+    }
+  
+}
+
+@media (max-width: 991px) {
+
+    /*doctors openingtime*/
+    .doctors-openingtime {
+        margin-bottom: 40px;
+    }
+
+    /*department-list*/
+    .service-slider  {
+        margin-top: 120px;
+    }
+
+    .home-3 .service-slider {
+        margin-top: 80px;
+    }
+
+    /*single-doctor-Area*/ 
+    .single-doctor-Area .single-doctor {
+        margin-bottom: 80px;
+    }
+
+    /* Divider Area */
+    .divider-area .divider-content {
+        background-color: transparent;
+        text-align: center;
+    }
+
+    .divider-area .divider-content h3 {
+        color: #fff;
+    }
+
+    .divider-area .divider-content p {
+        color: #fff;
+    }
+
+    .divider-area .btn-theme {
+        border: medium none;
+        border-radius: 0;
+        display: inline-block;
+        left: 50%;
+        margin-bottom: 52px;
+        position: relative;
+        top: 0;
+        transform: translateX(-50%);
+    }
+
+    .department-section ul li{
+        width: 50%;
+    }
+
+    .crumbs {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+
+    .fade.in {
+        margin-bottom: 40px;
+    }
+
+    .home-3 .fade.in {
+        margin-bottom: 0;
+    }
+
+    .roboto-slider-1 .slide-caption .btns-group,
+    .roboto-slider-2 .slide-caption .btns-group,
+    .roboto-slider-3 .slide-caption .btns-group {
+        margin-top: 25px;
+    }
+
+    .team-section {
+        margin-bottom: 462px;
+    }
+
+    .d-doctor-thumb > img {
+        width: 100%;
+    }
+
+    .appoinment-pege .appoinment-form {
+      display: inline-block;
+      position: relative;
+    }
+
+    .appoinment-pege .our-location {
+      display: inline-block;
+      margin-bottom: 45px;
+      position: relative;
+    }
+
+    .blg-inner-img img {
+        margin-bottom: 30px;
+    }
+
+    .sidebar-feature {
+
+    }
+    .features-section {
+        background-color: #f7f7f7;
+    }
+    .features-section:before {
+        display: none;
+    }
+    .cta-section .cta-text h2 {
+        font-size: 23px;
+    }
+    .cta-section .cta-text p {
+        font-size: 14px;
+    }
+    .my-team-col img {
+        max-width: none;
+        width: 100%;
+    }
+
+    .tmdl-contact-box {
+        margin-bottom: 40px;
+    }
+    .services-section .details h3 {
+    font-size: 17px;
+    }
+    .department-section .tab-content h3 {
+    font-size: 26px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*fun-fact*/
+  .fun-fact h3 {
+      font-size: 32px;
+      margin-bottom: 8px;
+  }
+  .fun-fact p {
+      font-size: 13px;
+      font-weight: 600;
+  }
+
+    /*department-section*/
+
+    .department-section .department-thumb img {
+      width: 32%;
+    }
+
+    .department-section ul li a i {
+      display: none;
+    }
+
+    .department-section ul li{
+      width: 50%;
+    }
+  
+}
+
+@media (max-width: 676px) {
+  
+
+   footer .footer-area .col-lg-4.col-md-4,
+   footer .footer-area .col-lg-2.col-md-2,
+   footer .footer-area .col-lg-2.col-md-2,
+   footer .footer-area .col-lg-4.col-md-4 {
+        width: 100%;
+    }
+
+    .filter-button-group button {
+      margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /*single doctor*/
+    .single-doctor {
+      margin-bottom: 30px;
+    }
+
+    .single-doctor .thumbnail img {
+        min-width: 100%;
+    }
+
+    .welcome-area .section-title h2 {
+        font-size: 21px;
+    }
+
+    .welcome-area .section-title p {
+        font-size: 14px;  
+    }
+
+    .single-doctor .content {
+        bottom: 42px;
+        display: inline-block;
+        left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        position: absolute;
+    }
+
+    /*single-pricing*/
+
+    .single-pricing {
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .single-pricing .thumbnail img {
+        min-width: 100%;
+    }
+
+    .price-btn {
+      display: block;
+    }
+
+    .single-pricing .content {
+        display: none;
+    }
+
+    /*divider-area*/
+    .divider-area .divider-content h3 {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    /*header-bottom*/
+
+    .header-bottom:after {
+      display: none;
+    }
+    .ht-opening {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ht-social {
+        display: inline-block;
+        left: calc(50% - 50px);
+        margin-right: 7px;
+        position: relative;
+        width: 100%;
+    }
+
+   .js .slicknav_menu {
+        background-color: transparent;
+        display: block;
+        padding: 12px 4px;
+        position: absolute;
+        right: 0;
+        top: 63px;
+        width: 30%;
+        z-index: 9999;
+    }
+
+    .gallery-item img {
+        width: 100%;
+    }
+
+    .single-pricing .pricing-list {
+        background-color: transparent;
+    }
+    .about-tab .tab-content .content p {
+        padding-right: 0;
+    }
+  
+}
+
+@media (max-width: 850px) {
+    .d-doctor-content {
+      margin-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+  .divider-content.color-b-w {
+      background-color: transparent !important;
+  }
+  .cta-section .cta-text {
+        text-align: center;
+    }
+    .cta-section .contact-info {
+        text-align: center;
+    }
+    .hero-style-1 .slide::before, .hero-style-2 .slide::before {
+    background-color: rgba(33, 77, 99, 0.53);
+   }
+
+}
+
+@media (max-width: 480px) {
+    .np-post {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+    .comment-info-inner article {
+        text-align: center;
+    }
+    .children{
+        padding-left: 0;
+    }
+    .comment-thumb {
+        float: none;
+        margin-bottom: 28px;
+    }
+    .comment-content {
+        padding: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    /*department-section*/
+
+    .department-section .department-thumb img {
+        width: 32%;
+    }
+
+    .testimonial-meta:before {
+        display: none;
+    }
+
+    .roboto-slider-1 .slide-caption > h1,
+    .roboto-slider-2 .slide-caption > h1,
+    .roboto-slider-3 .slide-caption > h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .roboto-slider-1 .slide-caption > p,
+    .roboto-slider-2 .slide-caption > p,
+    .roboto-slider-3 .slide-caption > p {
+        display: block;
+        font-size: 27px;
+        text-align: center;
+    }
+  
+}
+
+@media (max-width: 400px) {
+    .single-doctor .thumbnail .single-doctor-social .doctor-social {
+        display: none;
+    }
+
+    .banner-content > h2 {
+        font-size: 36px;
+    }
+
+    .doctors-openingtime {
+        padding: 26px 15px;
+    }
+
+    .doctors-openingtime h4 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .doctors-openingtime p {
+        font-size: 13px;
+        text-align: center;
+    }
+    .doctors-openingtime i {
+        display: none;
+    }
+
+    .np-post h2 a {
+        font-size: 14px;
+    }
+    .department-section ul li {
+        width: 100%;
+    }
+
+    .department-section .tab-content h3 {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 417px) {
+  .single-blog .blog-thumbnail img {
+        max-width: none;
+        width: auto;
+    }
+
+    .single-blog .blog-meta .meta-date {
+      margin-right: 0;
+      position: absolute;
+      top: -74px;
+    }
+
+    .single-blog .blg-comment {
+      display: none;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .slide-caption {
+        display: none;
+    }
+    .single-blog .blog-meta .meta-date {
+        top: -52px;
+    }
+
+    .department-section .department-thumb img {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 397px) {
+    .about-tab .nav-tabs > li a {
+        width: 100%;
+        padding: 18px 58px;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 14px;
+    }
+    .about-tab .nav-tabs > li.active a:before {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    /*single-doctor*/ 
+    .single-doctor .thumbnail {
+        min-width: 100%;
+    }
+    .single-doctor .content {
+        padding: 18px 30px;
+    }
+    .single-doctor .content:before {
+        display: none;
+    }
+
+    .single-doctor .content .doctor-icon {
+        display: none;
+    }
+    .doctors-openingtime {
+        background-color: #03a9f1;
+        margin: 0 15px 40px;
+    }
+    .doctors-openingtime:before {
+        display: none;
+    }
+    /*funfact-col*/
+    .fun-fact .col {
+        width: 100%;
+    }
+    .fun-fact:after {
+      display: none;
+      
+    }
+
+    /*owl-theme*/
+
+    .owl-theme .owl-controls {
+        display: none !important; 
+    }
+
+    /*divider-area*/
+    .divider-area .divider-content {
+          text-align: center;
+    }
+
+    /*department-section*/
+
+    .department-section .department-thumb img {
+          width: 100%;
+    }
+
+    .testimonial-meta:before {
+          display: none;
+    }
+
+    .funfact-col {
+        border: 1px solid #fff;
+        margin-bottom: 30px;
+        padding: 44px 0;
+    }
+
+    .about-tab {
+        margin-bottom: 40px;
+    }
+    .doctors-openingtime h4 {
+        font-size: 14px;
+    }
+
+    .banner-content > h2 {
+        font-size: 28px;
+    }
+  
+}
+
+@media (max-width: 320px) {
+    .tmdl-contact-box > a {
+        font-size: 13px;
+    }
+    .tmdl-contact-box .dctr-social-link a {
+        opacity: 1;
+        margin: 0px 2px;
+        color: #fff;
+        display: inline-block;
+        width: 42px;
+        height: 46px;
+        line-height: 46px;
+        font-size: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
