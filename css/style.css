@@ -311,8 +311,14 @@ Global Elements Style
 /*
 日历
  */
+
+.month_span{
+    margin: 5px;
+    font-size: 30px;
+}
+
 .div_calendar {
-    width: 450px;
+    width: 800px;
     margin: 0 auto;
     text-align: center;
     display: -webkit-box;
@@ -327,21 +333,29 @@ Global Elements Style
 
 /** 日历主体 */
 .div_calendar_body {
-    width: 350px;
+    /*width: 350px;*/
+    width: 560px;
     text-align: center;
+    margin: 0 auto;
 }
 
 /** 日元素 */
 .div_calendar span {
-    width: 50px;
+    width: 70px;
     display: inline-block;
+    font-size: 30px;
     text-align: center;
-    line-height: 50px;
+    /*line-height: 100px;*/
+    line-height: 70px;
+    margin: 15px 5px 15px 5px;
 }
 
 /** 正常 */
 .div_calendar span.normal {
-    color: blue;
+    border-radius: 50%;
+    background: greenyellow;
+    font-weight: bold;
+    color: #666;
 }
 
 /** 迟到 */
@@ -354,9 +368,11 @@ Global Elements Style
     color: #666;
 }
 
-/** 缺勤 */
+/** 当天 */
 .div_calendar span.today {
+    color: #666;
     border-radius: 50%;
+    font-weight: bold;
     background: cornflowerblue;
 }
 
