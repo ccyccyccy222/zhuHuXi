@@ -89,7 +89,7 @@ function AttendanceCalendar(_obj, _fn, _lable) {
      */
     this.setAttendance = function (_value) {
         attendances = _value;
-        if (getDataType == 1) {
+        if (getDataType === 1) {
             initCalendar();
         }
     }
@@ -140,6 +140,10 @@ function AttendanceCalendar(_obj, _fn, _lable) {
         _model = model;
     }
 
+    this.daKa = function () {
+        daKa();
+    }
+
     /**
      * 创建日历
      */
@@ -163,8 +167,7 @@ function AttendanceCalendar(_obj, _fn, _lable) {
                 attendances = getDataFn(getYearAndMonth(myDate));
                 if (attendances && attendances.length) {
                     arrayToMap();
-                }
-                else {
+                } else {
                     console.log("日历暂时没有绑定数据!");
                 }
             }
@@ -185,18 +188,45 @@ function AttendanceCalendar(_obj, _fn, _lable) {
         } else {
             arryType = 1;
         }
+        // if (length > myDate.getDate()) {
+        //     arryType = 0;
+        // } else {
+        //     arryType = 1;
+        // }
+
         for (var i = 0; i < length; i++) {
             if (!_model || !_model.dValue) {
                 console.log("请先配置model!");
             }
-            var key = attendances[i][_model.dValue];
+            // console.log("attendances[i][_model.dValue]");
+            // console.log(attendances[i][_model.dValue]);
+            // console.log("attendances[i].dValue");
+            // console.log(attendances[i].dValue);
+            // console.log("attendances[i].datetime");
+            // console.log(attendances[i].datetime);
+
+            //attendances[i][_model.dValue]=attendances[i].datetime
+            const key = attendances[i][_model.dValue];
             if (typeof key == "object") {
                 map[key.getDate()] = attendances[i];
+                console.log("key.getDate()");
+                console.log(key.getDate());
+                console.log("map[key.getDate()]");
+                console.log(map[key.getDate()]);
             }
             if (typeof key == "number") {
-                var temp_date = new Date();
+                //进了这里
+                console.log("here");
+                const temp_date = new Date();
                 temp_date.setTime(key);
-                map[temp_date.getDate()] = attendances[i];
+                if (temp_date.getMonth() === myDate.getMonth()) {
+                    map[temp_date.getDate()] = attendances[i];
+                    console.log("temp_date.getMonth()===myDate.getMonth()");
+                    console.log("temp_date.getDate()");
+                    console.log(temp_date.getDate());
+                }
+                // console.log("temp_date.getDate()");
+                // console.log(temp_date.getDate());
             }
         }
     }
@@ -223,7 +253,8 @@ function AttendanceCalendar(_obj, _fn, _lable) {
         date = myDate.getDate();
         day = myDate.getDay();
         firstWeekDay = getfirstWeekDay();
-        mds = DayNumOfMonth(myDate.getYear(), myDate.getMonth() + 1);
+        //DayNumOfMonth根据年月查询当月天数
+        mds = DayNumOfMonth(myDate.getFullYear(), myDate.getMonth() + 1);
         currentYM = myDate.getFullYear() + "-" + formatMonth(myDate.getMonth());
     }
 
@@ -232,19 +263,18 @@ function AttendanceCalendar(_obj, _fn, _lable) {
      * @param _newDate
      */
     function setDate(ym) {
+        // js只认函数名 形参和实参允许不一致,其实每次都刷新日历
         if (ym) {
             var _newDate = convertDateFromString(ym);
             var newYm = getYearAndMonth(_newDate);
             var currentYm = getYearAndMonth(myDate);
-            if (newYm == currentYm) {
+            if (newYm === currentYm) {
                 refreshBody = false;
-            }
-            else {
+            } else {
                 myDate = _newDate;
                 refreshBody = true;
             }
-        }
-        else {
+        } else {
             if (!myDate) {
                 myDate = new Date();
                 $actualDate = myDate;
@@ -260,8 +290,7 @@ function AttendanceCalendar(_obj, _fn, _lable) {
     function formatMonth(target) {
         if (target < 9) {
             target = "0" + (target + 1);
-        }
-        else {
+        } else {
             target = target + 1;
         }
         return target;
@@ -327,8 +356,7 @@ function AttendanceCalendar(_obj, _fn, _lable) {
             var _day = formatDate(target.getDate());
             var _weekday = formatDay(target.getDay());
             return year + "-" + month + "-" + _day + " " + _weekday;
-        }
-        else {
+        } else {
             if (!target) {
                 target = new Date();
             }
@@ -352,8 +380,7 @@ function AttendanceCalendar(_obj, _fn, _lable) {
         var month = target.getMonth();
         if (month < 9) {
             month = "0" + (month + 1);
-        }
-        else {
+        } else {
             month = month + 1;
         }
         return target.getFullYear() + "-" + month;
@@ -363,6 +390,9 @@ function AttendanceCalendar(_obj, _fn, _lable) {
      * 初始化日历主体
      */
     function initCalendarBody() {
+        let weiDay=document.getElementById("weiDay");
+        weiDay.innerText=(attendances.length-13).toString();
+
         $content = document.createElement("div");
         addClass($content, "div_calendar_body");
         $elem.appendChild($content);
@@ -377,8 +407,7 @@ function AttendanceCalendar(_obj, _fn, _lable) {
                 length = firstWeekDay == 0 ? 1 : 8 - firstWeekDay;
                 num = length;
                 createLine(length - 1, 1);
-            }
-            else {
+            } else {
                 var length = mds - num > 6 ? 7 : mds - num;
                 num = num + length;
                 createLine(length - 1);
@@ -440,8 +469,7 @@ function AttendanceCalendar(_obj, _fn, _lable) {
             if (type == 1) {
                 //设置星期数
                 var weekDay = firstWeekDay + i;
-            }
-            else {
+            } else {
                 weekDay = i + 1;
             }
             if (weekDay > 6) {
@@ -458,8 +486,7 @@ function AttendanceCalendar(_obj, _fn, _lable) {
         }
         if (type == 1) {
             addClass(newDiv, "first_div")
-        }
-        else {
+        } else {
             addClass(newDiv, "last_div")
         }
         $content.appendChild(newDiv);
@@ -488,13 +515,13 @@ function AttendanceCalendar(_obj, _fn, _lable) {
      */
     function setOnClick(span) {
         span.onclick = function () {
-            var spans = document.getElementsByClassName("select");
+            const spans = document.getElementsByClassName("select");
             if (spans && spans.length > 0) {
                 spans[0].className = spans[0].className.replace("select", "").trim();
             }
             $selectedSpan = this;
             addClass(this, "select");
-            var _date = formatDate(parseInt(this.innerText));
+            const _date = formatDate(parseInt(this.innerText));
             myDate = convertDateFromString(currentYM + "-" + _date);
             showCurrentDate();
             if (typeof clickFn == "function") clickFn(myDate);
@@ -505,13 +532,17 @@ function AttendanceCalendar(_obj, _fn, _lable) {
      * 设置绑定方式
      */
     function bindType(span) {
-        if (arryType == 0) {
+        if (arryType === 0) {
+            console.log("arryType === 0");
             if (attendances && attendances.length > 0) {
                 bindAttendance(span, attendances[index]);
             }
-        }
-        else {
+        } else {
+            console.log("arryType !== 0");
             if (map && map[index + 1]) {
+                console.log("map && map[index + 1]!=null");
+                console.log("map[index + 1]");
+                console.log(map[index + 1]);
                 bindAttendance(span, map[index + 1]);
             }
         }
@@ -524,7 +555,8 @@ function AttendanceCalendar(_obj, _fn, _lable) {
      */
     function bindAttendance(span, attendance) {
         if (attendance) {
-            span.setAttribute("id", attendance[_model.date]);
+            // span.setAttribute("id", attendance[_model.date]);
+            span.setAttribute("id", attendance[_model.datetime]);
             switch (attendance[_model.status]) {
                 case _model.absense:
                     addClass(span, "absense");
@@ -543,13 +575,11 @@ function AttendanceCalendar(_obj, _fn, _lable) {
         if (!showCurrentDateFlag) return;
         if (target_lable) {
             document.getElementById(target_lable).innerText = getCompleteDate(myDate);
-        }
-        else {
+        } else {
             if (document.getElementById("currentDate_text")) {
                 var text = document.getElementById("currentDate_text")
                 text.innerHTML = getCompleteDate(myDate);
-            }
-            else {
+            } else {
                 var currentDiv = document.createElement("div");
                 addClass(currentDiv, "div_currentDate");
                 span = document.createElement("span");
@@ -646,6 +676,25 @@ function AttendanceCalendar(_obj, _fn, _lable) {
         }
     }
 
+    /*
+    打卡按钮
+     */
+    function daKa() {
+        //            span.setAttribute("id", attendance[_model.datetime]);
+        let button = document.getElementById("daKaBtn");
+        button.innerText = "今日未吸烟";
+        // document.getElementById(myDate);
+        // console.log("myDate.valueOf()");
+        // console.log(myDate.valueOf());
+        // console.log("typeof myDate.valueOf()")
+        // console.log(typeof myDate.valueOf())
+        let a = document.querySelectorAll(".div_calendar span.today");
+        console.log(a[0]);
+        a[0].style.background = "greenyellow";
+        console.log(a[0].style.background);
+        alert("打卡成功！")
+    }
+
     /**
      * 给指定的element追加样式
      * @param element
@@ -654,8 +703,7 @@ function AttendanceCalendar(_obj, _fn, _lable) {
     function addClass(element, value) {
         if (!element.className) {
             element.className = value;
-        }
-        else {
+        } else {
             var newClass = element.className;
             newClass += " ";
             newClass += value;
@@ -676,18 +724,22 @@ var model = {
     normal: 1
 };
 ac.setModel(model);
-ac.setAttendance(getData2());
+ac.setAttendance(getData2(-1));
 
 function upMonth() {
     ac.upMonth();
-    ac.setAttendance(getData(ac.getCurrentDate()));
+    ac.setAttendance(getData2(-1));
 }
 
 function nextMonth() {
     ac.nextMonth();
     // ac.setAttendance(getData2());
-    ac.setAttendance(getData(ac.getCurrentDate()));
+    ac.setAttendance(getData2(-1));
+}
 
+function daKa() {
+    ac.setAttendance(getData2(0));
+    ac.daKa();
 }
 
 /**
@@ -696,14 +748,32 @@ function nextMonth() {
  */
 function getData(ym) {
     var attendances = [];
-    for (var i = 0; i < 30; i++) {
-        var num = GetRandomNum(0, 2);
-        attendances.push({datetime: i, status: num});
+    var today = new Date();
+    // if(ac.getCurrentDate().getMonth()===today.getMonth()) {
+    // //在当前月份内
+    //     for(let i=-1;i>-24;i--){
+    //         attendances.push({datetime: today.clone().addDays(i).valueOf(), status: 1});
+    //     }
+    // }
+    // else {
+    //     //在其他月份
+    //     for (let i = 0;
+    //          i < ac.getCurrentDate().getDaysInMonth(
+    //              ac.getCurrentDate().getFullYear(), ac.getCurrentDate().getMonth()
+    //          );
+    //          i++)
+    //     {
+    //         const num = GetRandomNum(0, 2);
+    //         attendances.push({datetime: i, status: num});
+    //     }
+    // }
+    for (let i = -1; i > -24; i--) {
+        attendances.push({datetime: today.clone().addDays(i).valueOf(), status: 1});
     }
     return attendances;
 }
 
-function getData2() {
+function getData2(start) {
     var attendances = [];
     var today = new Date();
     // attendances.push({datetime: today.clone().addDays(1).valueOf(), status: GetRandomNum(0, 2)});
@@ -712,15 +782,23 @@ function getData2() {
     // attendances.push({datetime: today.clone().addDays(-7).valueOf(), status: GetRandomNum(0, 2)});
     // attendances.push({datetime: today.clone().addDays(-11).valueOf(), status: GetRandomNum(0, 2)});
     // attendances.push({datetime: today.clone().addDays(-12).valueOf(), status: GetRandomNum(0, 2)});
-    for(let i=-1;i>-24;i--){
+    console.log(ac.getCurrentDate().getMonth() + 1);
+    for (let i = start; i > -23; i--) {
         attendances.push({datetime: today.clone().addDays(i).valueOf(), status: 1});
     }
-    // attendances.push({datetime: today.clone().addDays(1).valueOf(), status: 1});
-    // attendances.push({datetime: today.clone().addDays(2).valueOf(), status: 1});
-    // attendances.push({datetime: today.clone().addDays(-5).valueOf(), status: 1});
-    // attendances.push({datetime: today.clone().addDays(-7).valueOf(), status: 1});
-    // attendances.push({datetime: today.clone().addDays(-11).valueOf(), status: 1});
-    // attendances.push({datetime: today.clone().addDays(-12).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-27).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-58).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-25).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-71).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-44).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-33).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-67).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-31).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-25).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-32).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-45).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-26).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-28).valueOf(), status: 1});
     return attendances;
 }
 
@@ -730,9 +808,11 @@ function GetRandomNum(Min, Max) {
     return (Min + Math.round(Rand * Range));
 }
 
-ac.setClickFn(clickFn);
+// ac.setClickFn(clickFn);
+
 function clickFn(clickDate) {
     alert(clickDate);
 }
+
 /**** 此为测试js部分 测试日历  *****/
 // console.log(DayNumOfMonth(2016, 2));

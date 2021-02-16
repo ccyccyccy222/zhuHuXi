@@ -153,7 +153,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="project-menu filter-button-group mb-60">
-                        <button class="active" data-filter="*">show all</button>
+                        <button class="active" data-filter="*">无烟计划</button>
                         <button class="" data-filter=".event">event</button>
                         <button class="" data-filter=".hospital">hospital</button>
                         <button class="" data-filter=".denteal">denteal</button>
@@ -163,15 +163,13 @@
                 </div>
             </div>
             <!--                <div class="div_calendar_title"><h1></h1></div>-->
-            <div class="div_changeMonth" style="text-align: center">
-                <button type="button" onclick="upMonth()" class="btn btn-primary btn-lg">上个月</button>
-                <button type="button" onclick="nextMonth()" class="btn btn-primary btn-lg">下个月</button>
-
-                <!--                    <span onclick="upMonth()" class="month_span">上一月</span>-->
-                <!--                    <span onclick="nextMonth()" class="month_span">下一月</span>-->
-            </div>
-
+            <h1 style="text-align: center">已连续坚持<span id="weiDay"></span>天未吸烟</h1>
             <div id="calendar_div" class="div_calendar">
+            </div>
+            <div class="div_changeMonth" style="text-align: center">
+                <button type="button" onclick="upMonth()" class="btn btn-success btn-lg">上个月</button>
+                <button type="button" onclick="nextMonth()" class="btn btn-success btn-lg">下个月</button>
+                <button type="button" onclick="daKa()" class="btn btn-secondary btn-lg" id="daKaBtn">今日未吸烟打卡</button>
             </div>
 
             <div id="current_date_label" class="div_target_label" style="text-align: center"></div>

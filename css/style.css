@@ -317,6 +317,11 @@ Global Elements Style
     font-size: 30px;
 }
 
+#weiDay{
+    font-size: 50px;
+    color: green;
+}
+
 .div_calendar {
     width: 800px;
     margin: 0 auto;
@@ -341,6 +346,7 @@ Global Elements Style
 
 /** 日元素 */
 .div_calendar span {
+    cursor: pointer;
     width: 70px;
     display: inline-block;
     font-size: 30px;
@@ -350,7 +356,15 @@ Global Elements Style
     margin: 15px 5px 15px 5px;
 }
 
-/** 正常 */
+/*选中*/
+.div_calendar span.select {
+    border-radius: 50%;
+    background: aliceblue;
+    font-weight: bold;
+    color: #666;
+}
+
+/** 未吸烟 */
 .div_calendar span.normal {
     border-radius: 50%;
     background: greenyellow;
@@ -393,6 +407,11 @@ Global Elements Style
 
 .div_calendar .changeDate {
     cursor: pointer;
+}
+
+.div_changeMonth {
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .div_calendar .div_currentDate span {

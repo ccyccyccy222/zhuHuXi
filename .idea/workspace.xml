@@ -10,12 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="日历的一种方式">
-      <change afterPath="$PROJECT_DIR$/js/attendanceCalendar.js" afterDir="false" />
+    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="做了一个基本的日历">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery-masonry.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery-masonry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/attendanceCalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/attendanceCalendar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,8 @@
       <workItem from="1613183742425" duration="1540000" />
       <workItem from="1613263809772" duration="1483000" />
       <workItem from="1613391526856" duration="1484000" />
-      <workItem from="1613438158013" duration="11290000" />
+      <workItem from="1613438158013" duration="11498000" />
+      <workItem from="1613462896681" duration="14751000" />
     </task>
     <task id="LOCAL-00001" summary="完成了挂号情况的基本页面">
       <created>1613137883376</created>
@@ -81,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613440306151</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="做了一个基本的日历">
+      <created>1613456119126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613456119126</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +109,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成了挂号情况的基本页面" />
     <MESSAGE value="日历的一种方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="日历的一种方式" />
+    <MESSAGE value="做了一个基本的日历" />
+    <option name="LAST_COMMIT_MESSAGE" value="做了一个基本的日历" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613439716470">
