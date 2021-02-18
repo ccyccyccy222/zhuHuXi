@@ -8,7 +8,7 @@
     -------------------------------------------*/
 
     function slicknav() {
-      $('#menu').slicknav();  
+      $('#menu').slicknav();
     }
 
 
@@ -393,7 +393,7 @@
         $('.counter').counterUp({
             delay: 10,
             time: 1000
-        });        
+        });
     }
 
     /*----------------------
@@ -428,7 +428,7 @@
              $(this).addClass('active');
              event.preventDefault();
          });
-        
+
     });
 
 
@@ -485,7 +485,7 @@
 
         preloader();
         sliderBgSetting();
-        robotoSlider();
+        // robotoSlider();
 
      });
 

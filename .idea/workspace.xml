@@ -10,10 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="第一种贴吧设计">
+    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="完成了贴吧的页面设计">
+      <change afterPath="$PROJECT_DIR$/js/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery-masonry.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery-masonry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,6 +44,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -69,7 +74,8 @@
       <workItem from="1613462896681" duration="16038000" />
       <workItem from="1613524505510" duration="1490000" />
       <workItem from="1613569943856" duration="5731000" />
-      <workItem from="1613606251649" duration="4863000" />
+      <workItem from="1613606251649" duration="13076000" />
+      <workItem from="1613634068915" duration="2765000" />
     </task>
     <task id="LOCAL-00001" summary="完成了挂号情况的基本页面">
       <created>1613137883376</created>
@@ -106,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613607511456</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成了贴吧的页面设计">
+      <created>1613613202863</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1613613202863</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +143,8 @@
     <MESSAGE value="做了一个基本的日历" />
     <MESSAGE value="完成第一个板块：无烟计划" />
     <MESSAGE value="第一种贴吧设计" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一种贴吧设计" />
+    <MESSAGE value="完成了贴吧的页面设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了贴吧的页面设计" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613439716470">

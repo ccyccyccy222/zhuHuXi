@@ -3831,6 +3831,18 @@ Blog Style
     font-size: 20px;
 }
 
+.blogThumb{
+    border-radius:70%;
+    height: 50px;
+    width: 50px;
+    overflow:hidden;
+    margin-right: 15px
+}
+
+.comment-buttom li{
+    margin: 10px;
+}
+
 .blog-wrap .blog-img {
     position: relative;
 }
