@@ -166,29 +166,6 @@
             <!-- 贴吧具体内容 -->
             <div class="blg_inner_carousel swiper-container" style="width:800px;margin: auto">
                 <!-- 模态框 -->
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <!-- 模态框头部 -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">回复</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-
-                            <!-- 模态框主体 -->
-                            <div class="modal-body">
-                                <textarea name="msg" id="subMessage" placeholder="回复"></textarea>
-                            </div>
-
-                            <!-- 模态框底部 -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" onclick="addXiaoLou()">发表</button>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
                 <div class="about-author" style="margin-top: -20px;">
                     <div class="abt-auth-content">
                         <h4>春节慢阻肺患者有什么要注意的？</h4>
@@ -215,19 +192,34 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
                                         wisi enim ad minim veniam...</p>
-                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>
+<!--                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
                                 </div>
                                 <div class="comment-buttom" style="float: right;">
                                     <ul style="display: flex">
                                         <li>1楼</li>
                                         <li>
-                                            <a href="#">
-                                                <i class="icofont icofont-speech-comments"></i> <span>0</span>
+                                            <a data-toggle="collapse" href="#collapseExample0"
+                                               aria-expanded="false">
+                                                <i class="icofont icofont-speech-comments"></i>
+                                                <span>0</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </article>
+<!--                            回复折叠板-->
+                            <div class="collapse" id="collapseExample0">
+                                <div class="card-body" style="margin: 0 50px 0 50px">
+                                    <h5 class="card-title">回复</h5>
+                                    <div class="input-group mb-3" style="display: flex">
+                                        <input type="text" maxlength="100" style="margin: auto" class="form-control" id="collapseInput0">
+                                        <button class="btn btn-primary" type="button" onclick="addXiaoLou()" id="button0">提交</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <ul class="children">
+                            </ul>
                         </li>
                         <!--一楼-->
                         <li id="comment1" class="comment-info-inner">
@@ -245,24 +237,35 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
                                         wisi enim ad minim veniam...</p>
-                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>
+<!--                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
                                 </div>
                                 <div class="comment-buttom" style="float: right;">
                                     <ul style="display: flex">
                                         <li>1楼</li>
                                         <li>
-                                            <a href="#">
-                                                <i class="icofont icofont-speech-comments" data-toggle="modal"
-                                                   data-target="#myModal"></i>
+                                            <a data-toggle="collapse" href="#collapseExample1"
+                                               aria-expanded="false">
+                                                <i class="icofont icofont-speech-comments"></i>
                                                 <span>1</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </article>
+<!--                            <div class="collapse" id="collapseExample2" style="padding: 0 50px 0 50px">-->
+                            <div class="collapse" id="collapseExample1">
+                            <div class="card-body" style="margin: 0 50px 0 50px">
+                                    <h5 class="card-title">回复</h5>
+                                    <div class="input-group mb-3" style="display: flex">
+                                        <input type="text" maxlength="100" style="margin: auto" class="form-control" id="collapseInput1">
+                                        <button class="btn btn-primary" type="button" onclick="addXiaoLou()" id="button1">提交</button>
+                                    </div>
+
+                                </div>
+                            </div>
                             <!--                                            第一个回复的子回复列表-->
                             <ul class="children">
-                                <li class="comment-info-inner">
+                                <li class="comment-info-inner" id="subLi0">
                                     <article>
                                         <div class="comment-thumb">
                                             <img src="images/blog/tst-auth2.jpg" alt="image">
@@ -275,20 +278,10 @@
                                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                                                 nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
                                                 volutpat. Ut wisi enim ad minim veniam...</p>
-                                            <!--                                                            <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
                                         </div>
-                                        <div class="comment-buttom" style="float: right;">
-                                            <ul style="display: flex">
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="icofont icofont-speech-comments"></i> <span>0</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
                                     </article>
                                 </li>
+
                             </ul>
                         </li>
                         <!--                                        二楼-->
@@ -313,13 +306,27 @@
                                     <ul style="display: flex">
                                         <li>2楼</li>
                                         <li>
-                                            <a href="#">
-                                                <i class="icofont icofont-speech-comments"></i> <span>0</span>
+                                            <a data-toggle="collapse" href="#collapseExample2"
+                                               aria-expanded="false">
+                                                <i class="icofont icofont-speech-comments"></i>
+                                                <span>1</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </article>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card-body" style="margin: 0 50px 0 50px">
+                                    <h5 class="card-title">回复</h5>
+                                    <div class="input-group mb-3" style="display: flex">
+                                        <input type="text" maxlength="100" style="margin: auto" class="form-control" id="collapseInput2">
+                                        <button class="btn btn-primary" type="button" onclick="addXiaoLou()" id="button2">提交</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <ul class="children">
+                            </ul>
                         </li>
                     </ul>
                 </div>

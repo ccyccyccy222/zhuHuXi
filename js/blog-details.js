@@ -1,66 +1,92 @@
 addLou = () => {
+
     const sourceNode = document.getElementById("comment0"); // 获得被克隆的节点对象
     const clonedNode = sourceNode.cloneNode(true); // 克隆节点
-    clonedNode.setAttribute("id", "comment" + sourceNode.parentNode.children.length); // 修改一下id 值，避免id 重复
+
+    let slength = sourceNode.parentNode.children.length;
+
+    // 修改一下id 值，避免id 重复
+    clonedNode.setAttribute("id", "comment" + slength);
     //修改新节点的p
-    let newP=document.getElementById("message").value;
-    let oldP=clonedNode.getElementsByTagName("p");
-    oldP[1].innerText=newP;
-    document.getElementById("message").value="";
-    let newLi=clonedNode.getElementsByTagName("li");
+    let newP = document.getElementById("message").value;
+    let oldP = clonedNode.getElementsByTagName("p");
+    oldP[1].innerText = newP;
+    document.getElementById("message").value = "";
+    //修改新节点的楼层
+    let newLi = clonedNode.getElementsByTagName("li");
     // console.log("newLi");
     // console.log(newLi);
     // console.log("newLi[0].innerText");
     // console.log(newLi[0].innerText);
-    newLi[0].innerText=sourceNode.parentNode.children.length+"楼";
-    clonedNode.style.display="block";
+    newLi[0].innerText = slength + "楼";
+    //修改新节点的a
+    let oldA = clonedNode.getElementsByTagName("a");
+    oldA[0].href = "#collapseExample" + slength;
+    console.log("oldA[0].href");
+    console.log(oldA[0].href);
+    //修改新节点的a
+    let oldInput = clonedNode.getElementsByTagName("input");
+    console.log("oldInput[0]");
+    console.log(oldInput[0]);
+    oldInput[0].setAttribute("id", "collapseInput" + slength);
+    //修改新节点的button
+    let oldButton = clonedNode.getElementsByTagName("button");
+    console.log("oldButton[0]");
+    console.log(oldButton[0]);
+    oldButton[0].setAttribute("id", "button" + slength);
+    //修改新节点的折叠div
+    let oldDiv = clonedNode.getElementsByTagName("div");
+    // oldDiv[0].href="#collapseExample"+slength;
+    console.log("oldDiv[4]");
+    console.log(oldDiv[4]);
+    oldDiv[4].setAttribute("id", "collapseExample" + slength);
+    //让新节点显示
+    clonedNode.style.display = "block";
     sourceNode.parentNode.appendChild(clonedNode); // 在父节点插入克隆的节点
-    console.log(sourceNode.parentNode.children.length);
+    console.log(slength);
     console.log(sourceNode.parentNode.children);
 }
 
-addXiaoLou=()=>{
-    // $('#myModal').on('show.bs.modal', function () {
-    //     var $this = $(this);
-    //     var $modal_dialog = $this.find('.modal-dialog');
-    //     $this.css('display', 'block');
-    //     // 点击事件传入event参数，通过enent.clientY可以取到当前点击处到页面顶端的高度
-    //     var marginTop = event.clientY;
-    //     // 但显示的地方就正好是点击处，还是不太满意，可以使用滚动条的高度来实现
-    //     if (parent.$('.scrollbar').length > 0) {
-    //         marginTop = parent.$('.scrollbar').scrollTop();
-    //     }
-    //     $modal_dialog.css({'margin-top': marginTop});
-    // });
-    // $("#myModal").modal({backdrop: true, keyboard: false});
+addXiaoLou = (ev) => {
+    ev  =  ev  ||  window.event; // 事件
+    const target = ev.target || ev.srcElement; // 获得事件源
+    const dragObj = target.getAttribute('id');
+    // alert(dragObj);
+    let a=dragObj.split("button");
+    console.log(a[1]);
 
-    let message=document.getElementById("subMessage").value;
+    //因为之前有一个none的样本里也有ul class="children"，所以实际楼数要减一
+    let array = document.querySelectorAll(".children");
+    console.log(array.length);
+    let index = 0;
+    for (let i = 0; i < array.length; i++) {
+        index += array[i].children.length;
+    }
+    console.log("addXiaoLou index");
+    console.log(index);
+
+    //子回复
+    //子回复不支持再回复
+    let message = document.getElementById("collapseInput" + a[1]).value;
+    document.getElementById("collapseInput" + a[1]).value = "";
     console.log(message);
+
+    const sourceNode = document.getElementById("subLi0"); // 获得被克隆的节点对象
+    const clonedNode = sourceNode.cloneNode(true); // 克隆节点
+    clonedNode.setAttribute("id", "subLi" + index); // 修改一下id 值，避免id 重复
+    let oldP = clonedNode.getElementsByTagName("p");
+    oldP[1].innerText = message;
+    array[a[1]].appendChild(clonedNode); // 在父节点插入克隆的节点
+    let liLocation = document.getElementById("comment" + a[1]);
+    let arraySpan=liLocation.getElementsByTagName("span");
+    console.log("arraySpan");
+    console.log(arraySpan);
+    console.log("arraySpan[1].innerText");
+    console.log(arraySpan[1].innerText);
+    let number=parseInt(arraySpan[1].innerText);
+    number+=1;
+    arraySpan[1].innerText=number.toString();
 }
 
-
-//显示模态框
-function modalOpen() {
-    //获取模态框对象   getElementsByClassName获取到的是一个数组对象
-    let modal = document.getElementsByClassName("modal-box")[0];
-    //获取浏览器当前宽高
-    let documentWidth = window.innerWidth;
-    let documentHeight = window.innerHeight;
-    //获取模态框宽度
-    let modalWidth = modal.offsetWidth;
-    //模态框距离浏览器右侧的距离就是（浏览器宽度-模态框宽）/ 2.0
-    //注意，需要把结果转为字符串类型
-    modal.style.left = ((documentWidth - modalWidth) / 2.0).toString();
-    //设置为可见
-    modal.style.visibility = "visible";
-}
-
-//模态框关闭
-function modalClose() {
-    //获取模态框
-    let modal = document.getElementsByClassName("modal-box")[0];
-    //设置为不可见
-    modal.style.visibility = "hidden";
-}
 
 

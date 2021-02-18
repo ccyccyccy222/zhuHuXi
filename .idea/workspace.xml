@@ -10,12 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="完成了贴吧详情页的基本设计">
-      <change afterPath="$PROJECT_DIR$/js/blog-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ndfc2d3erawdsa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ndfc2d3erawdsa.iml" afterDir="false" />
+    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="回复方案一：使用模态框，但是位置很奇怪">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appoinment.html" beforeDir="false" afterPath="$PROJECT_DIR$/appoinment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/blog-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/blog-details.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1613569943856" duration="5731000" />
       <workItem from="1613606251649" duration="13076000" />
       <workItem from="1613634068915" duration="12614000" />
-      <workItem from="1613650162413" duration="2249000" />
+      <workItem from="1613650162413" duration="12603000" />
     </task>
     <task id="LOCAL-00001" summary="完成了挂号情况的基本页面">
       <created>1613137883376</created>
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613637319256</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="回复方案一：使用模态框，但是位置很奇怪">
+      <created>1613654742694</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1613654742694</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +166,8 @@
     <MESSAGE value="第一种贴吧设计" />
     <MESSAGE value="完成了贴吧的页面设计" />
     <MESSAGE value="完成了贴吧详情页的基本设计" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了贴吧详情页的基本设计" />
+    <MESSAGE value="回复方案一：使用模态框，但是位置很奇怪" />
+    <option name="LAST_COMMIT_MESSAGE" value="回复方案一：使用模态框，但是位置很奇怪" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613439716470">
