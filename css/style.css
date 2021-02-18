@@ -423,6 +423,40 @@ Global Elements Style
 }
 
 /***************************************************
+贴吧
+****************************************************/
+#tieBaTask th {
+    text-align: center;
+    font-size: 20px;
+}
+
+#tieBaTask table {
+    border-collapse: collapse;
+    text-indent: initial;
+    float: left;
+    /*border-spacing: 2px;*/
+}
+
+#tieBaBtn{
+    /*display: inline;*/
+    /*margin-left: 100px;*/
+    margin-top: 50px;
+    /*width: 80px;*/
+}
+
+#tieBaRow{
+    margin-left: 150px;
+}
+
+.btn{
+    display: block;
+    margin: 10px;
+    /*margin-top: 10px;*/
+    /*margin-left: 30px;*/
+}
+
+
+/***************************************************
 Header Style
 ****************************************************/
 

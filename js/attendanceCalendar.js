@@ -198,35 +198,23 @@ function AttendanceCalendar(_obj, _fn, _lable) {
             if (!_model || !_model.dValue) {
                 console.log("请先配置model!");
             }
-            // console.log("attendances[i][_model.dValue]");
-            // console.log(attendances[i][_model.dValue]);
-            // console.log("attendances[i].dValue");
-            // console.log(attendances[i].dValue);
-            // console.log("attendances[i].datetime");
-            // console.log(attendances[i].datetime);
 
             //attendances[i][_model.dValue]=attendances[i].datetime
             const key = attendances[i][_model.dValue];
             if (typeof key == "object") {
                 map[key.getDate()] = attendances[i];
-                console.log("key.getDate()");
-                console.log(key.getDate());
-                console.log("map[key.getDate()]");
-                console.log(map[key.getDate()]);
+                // console.log("key.getDate()");
+                // console.log(key.getDate());
+                // console.log("map[key.getDate()]");
+                // console.log(map[key.getDate()]);
             }
             if (typeof key == "number") {
-                //进了这里
-                console.log("here");
                 const temp_date = new Date();
                 temp_date.setTime(key);
                 if (temp_date.getMonth() === myDate.getMonth()) {
                     map[temp_date.getDate()] = attendances[i];
                     console.log("temp_date.getMonth()===myDate.getMonth()");
-                    console.log("temp_date.getDate()");
-                    console.log(temp_date.getDate());
                 }
-                // console.log("temp_date.getDate()");
-                // console.log(temp_date.getDate());
             }
         }
     }
@@ -533,16 +521,16 @@ function AttendanceCalendar(_obj, _fn, _lable) {
      */
     function bindType(span) {
         if (arryType === 0) {
-            console.log("arryType === 0");
+            // console.log("arryType === 0");
             if (attendances && attendances.length > 0) {
                 bindAttendance(span, attendances[index]);
             }
         } else {
-            console.log("arryType !== 0");
+            // console.log("arryType !== 0");
             if (map && map[index + 1]) {
-                console.log("map && map[index + 1]!=null");
-                console.log("map[index + 1]");
-                console.log(map[index + 1]);
+                // console.log("map && map[index + 1]!=null");
+                // console.log("map[index + 1]");
+                // console.log(map[index + 1]);
                 bindAttendance(span, map[index + 1]);
             }
         }
@@ -683,15 +671,10 @@ function AttendanceCalendar(_obj, _fn, _lable) {
         //            span.setAttribute("id", attendance[_model.datetime]);
         let button = document.getElementById("daKaBtn");
         button.innerText = "今日未吸烟";
-        // document.getElementById(myDate);
-        // console.log("myDate.valueOf()");
-        // console.log(myDate.valueOf());
-        // console.log("typeof myDate.valueOf()")
-        // console.log(typeof myDate.valueOf())
         let a = document.querySelectorAll(".div_calendar span.today");
-        console.log(a[0]);
+        // console.log(a[0]);
         a[0].style.background = "greenyellow";
-        console.log(a[0].style.background);
+        // console.log(a[0].style.background);
         alert("打卡成功！")
     }
 
@@ -783,22 +766,23 @@ function getData2(start) {
     // attendances.push({datetime: today.clone().addDays(-11).valueOf(), status: GetRandomNum(0, 2)});
     // attendances.push({datetime: today.clone().addDays(-12).valueOf(), status: GetRandomNum(0, 2)});
     console.log(ac.getCurrentDate().getMonth() + 1);
-    for (let i = start; i > -23; i--) {
+    //连续未吸烟天数，再在initCalendarBody()修改
+    for (let i = start; i > -5; i--) {
         attendances.push({datetime: today.clone().addDays(i).valueOf(), status: 1});
     }
-    attendances.push({datetime: today.clone().addDays(-27).valueOf(), status: 1});
-    attendances.push({datetime: today.clone().addDays(-58).valueOf(), status: 1});
-    attendances.push({datetime: today.clone().addDays(-25).valueOf(), status: 1});
-    attendances.push({datetime: today.clone().addDays(-71).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-7).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-8).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-15).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-11).valueOf(), status: 1});
     attendances.push({datetime: today.clone().addDays(-44).valueOf(), status: 1});
-    attendances.push({datetime: today.clone().addDays(-33).valueOf(), status: 1});
-    attendances.push({datetime: today.clone().addDays(-67).valueOf(), status: 1});
-    attendances.push({datetime: today.clone().addDays(-31).valueOf(), status: 1});
-    attendances.push({datetime: today.clone().addDays(-25).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-53).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-27).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-21).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-14).valueOf(), status: 1});
     attendances.push({datetime: today.clone().addDays(-32).valueOf(), status: 1});
-    attendances.push({datetime: today.clone().addDays(-45).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-50).valueOf(), status: 1});
     attendances.push({datetime: today.clone().addDays(-26).valueOf(), status: 1});
-    attendances.push({datetime: today.clone().addDays(-28).valueOf(), status: 1});
+    attendances.push({datetime: today.clone().addDays(-39).valueOf(), status: 1});
     return attendances;
 }
 

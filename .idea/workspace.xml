@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="做了一个基本的日历">
+    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="完成第一个板块：无烟计划">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/gallery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery-masonry.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery-masonry.html" afterDir="false" />
@@ -40,7 +42,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -65,7 +69,10 @@
       <workItem from="1613263809772" duration="1483000" />
       <workItem from="1613391526856" duration="1484000" />
       <workItem from="1613438158013" duration="11498000" />
-      <workItem from="1613462896681" duration="14751000" />
+      <workItem from="1613462896681" duration="16038000" />
+      <workItem from="1613524505510" duration="1490000" />
+      <workItem from="1613569943856" duration="5731000" />
+      <workItem from="1613606251649" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="完成了挂号情况的基本页面">
       <created>1613137883376</created>
@@ -88,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613456119126</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成第一个板块：无烟计划">
+      <created>1613493911838</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613493911838</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +124,8 @@
     <MESSAGE value="完成了挂号情况的基本页面" />
     <MESSAGE value="日历的一种方式" />
     <MESSAGE value="做了一个基本的日历" />
-    <option name="LAST_COMMIT_MESSAGE" value="做了一个基本的日历" />
+    <MESSAGE value="完成第一个板块：无烟计划" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成第一个板块：无烟计划" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613439716470">
