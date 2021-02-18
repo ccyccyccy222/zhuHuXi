@@ -165,178 +165,164 @@
             </div>
             <!-- 贴吧具体内容 -->
             <div class="blg_inner_carousel swiper-container" style="width:800px;margin: auto">
-                <div class="about-author" style="margin-top: -20px;margin-bottom: 0px">
+                <!-- 模态框 -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- 模态框头部 -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">回复</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- 模态框主体 -->
+                            <div class="modal-body">
+                                <textarea name="msg" id="subMessage" placeholder="回复"></textarea>
+                            </div>
+
+                            <!-- 模态框底部 -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" onclick="addXiaoLou()">发表</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="about-author" style="margin-top: -20px;">
                     <div class="abt-auth-content">
                         <h4>春节慢阻肺患者有什么要注意的？</h4>
                     </div>
                 </div>
-<!--                <div class="swiper-wrapper">-->
-<!--                    <ul class="comment-list">-->
-<!--                        <li class="comment-info-inner">-->
-<!--                            <div class="swiper-slide" >-->
-<!--                                &lt;!&ndash;内容&ndash;&gt;-->
-<!--                                <p class="cl-gray-black">春节是中国一个传统的节日，是一年中较为喜庆的日子，-->
-<!--                                    但是在春节期间慢阻肺病人有哪些需要特别注意的地方呢？</p>-->
-<!--                                <div class="blog-btm-meta">-->
-<!--                                    &lt;!&ndash;                            左侧头像&ndash;&gt;-->
-<!--                                    <div style="display: flex;height: 51px;width: 200px">-->
-<!--                                        <div class="blogThumb">-->
-<!--                                            <img src="images/blog/big-author.jpg" alt="blog image">-->
-<!--                                        </div>-->
-<!--                                        <h5>会呼吸的猪</h5>-->
-<!--                                    </div>-->
-<!--                                    &lt;!&ndash;                            右侧喜欢、评论数目&ndash;&gt;-->
-<!--                                    <ul class="blg-likes">-->
-<!--                                        <li><a href="#"><i class="icofont icofont-heart"></i> <span>12</span></a></li>-->
-<!--                                        <li><a href="#"><i class="icofont icofont-speech-comments"></i> <span>03</span></a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                        <li class="comment-info-inner">-->
-<!--                            <div class="swiper-slide">-->
-<!--                                &lt;!&ndash;内容&ndash;&gt;-->
-<!--                                <p class="cl-gray-black">春节是中国一个传统的节日，是一年中较为喜庆的日子，-->
-<!--                                    但是在春节期间慢阻肺病人有哪些需要特别注意的地方呢？</p>-->
-<!--                                <div class="blog-btm-meta">-->
-<!--                                    &lt;!&ndash;                            左侧头像&ndash;&gt;-->
-<!--                                    <div style="display: flex;height: 51px;width: 200px">-->
-<!--                                        <div class="blogThumb">-->
-<!--                                            <img src="images/blog/big-author.jpg" alt="blog image">-->
-<!--                                        </div>-->
-<!--                                        <h5>会呼吸的猪</h5>-->
-<!--                                    </div>-->
-<!--                                    &lt;!&ndash;                            右侧喜欢、评论数目&ndash;&gt;-->
-<!--                                    <ul class="blg-likes">-->
-<!--                                        <li><a href="#"><i class="icofont icofont-heart"></i> <span>12</span></a></li>-->
-<!--                                        <li><a href="#"><i class="icofont icofont-speech-comments"></i> <span>03</span></a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </li> <li class="comment-info-inner">-->
-<!--                        <div class="swiper-slide">-->
-<!--                            &lt;!&ndash;内容&ndash;&gt;-->
-<!--                            <p class="cl-gray-black">春节是中国一个传统的节日，是一年中较为喜庆的日子，-->
-<!--                                但是在春节期间慢阻肺病人有哪些需要特别注意的地方呢？</p>-->
-<!--                            <div class="blog-btm-meta">-->
-<!--                                &lt;!&ndash;                            左侧头像&ndash;&gt;-->
-<!--                                <div style="display: flex;height: 51px;width: 200px">-->
-<!--                                    <div class="blogThumb">-->
-<!--                                        <img src="images/blog/big-author.jpg" alt="blog image">-->
-<!--                                    </div>-->
-<!--                                    <h5>会呼吸的猪</h5>-->
-<!--                                </div>-->
-<!--                                &lt;!&ndash;                            右侧喜欢、评论数目&ndash;&gt;-->
-<!--                                <ul class="blg-likes">-->
-<!--                                    <li><a href="#"><i class="icofont icofont-heart"></i> <span>12</span></a></li>-->
-<!--                                    <li><a href="#"><i class="icofont icofont-speech-comments"></i> <span>03</span></a>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
                 <div class="comment-area">
-<!--                                    <div class="comment-title">-->
-<!--                                        <h4>回复帖<span>2</span></h4>-->
-<!--                                    </div>-->
-<!--                    整个回复列表-->
-                                    <ul class="comment-list">
-<!--                                        一楼-->
-                                        <li class="comment-info-inner">
-                                            <article>
-                                                <div class="comment-thumb">
-<!--                                                <div class="blogThumb">-->
-                                                    <img src="images/blog/tst-auth1.jpg" alt="image">
-                                                    <div style="display: block;text-align: center"><h5>楼主</h5></div>
-                                                </div>
-                                                <div class="comment-content">
-                                                    <div class="meta-data">
-                                                        <h2>Luisiana garcias</h2>
-                                                        <p class="category">Category : <span>Apartment</span></p>
-                                                    </div>
-                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                                                        wisi enim ad minim veniam...</p>
-                                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>
-                                                </div>
-                                                <div class="comment-buttom" style="float: right;">
-                                                    <ul style="display: flex">
-                                                        <li>1楼</li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <i class="icofont icofont-speech-comments"></i> <span>1</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </article>
-<!--                                            第一个回复的子回复列表-->
-                                            <ul class="children">
-                                                <li class="comment-info-inner">
-                                                    <article>
-                                                        <div class="comment-thumb">
-                                                            <img src="images/blog/tst-auth2.jpg" alt="image">
-                                                        </div>
-                                                        <div class="comment-content">
-                                                            <div class="meta-data">
-                                                                <h2>Luisiana garcias</h2>
-                                                                <p class="category">Category : <span>Apartment</span></p>
-                                                            </div>
-                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                                                volutpat. Ut wisi enim ad minim veniam...</p>
-<!--                                                            <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
-                                                        </div>
-                                                        <div class="comment-buttom" style="float: right;">
-                                                            <ul style="display: flex">
-                                                                <li>
-                                                                    <a href="#">
-                                                                        <i class="icofont icofont-speech-comments"></i> <span>0</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </article>
-                                                </li>
-                                            </ul>
-                                        </li>
-<!--                                        二楼-->
-                                        <li class="comment-info-inner">
-                                            <article>
-                                                <div class="comment-thumb">
-                                                    <!--                                                <div class="blogThumb">-->
-                                                    <img src="images/blog/tst-auth1.jpg" alt="image">
-                                                    <div style="display: block;text-align: center"><h5>楼主</h5></div>
-                                                </div>
-                                                <div class="comment-content">
-                                                    <div class="meta-data">
-                                                        <h2>Luisiana garcias</h2>
-                                                        <p class="category">Category : <span>Apartment</span></p>
-                                                    </div>
-                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                                                        wisi enim ad minim veniam...</p>
-<!--                                                    <a href="#"><i class="icofont icofont-reply-all"></i><span>02</span></a>-->
-                                                </div>
-                                                <div class="comment-buttom" style="float: right;">
-                                                    <ul style="display: flex">
-                                                        <li>2楼</li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <i class="icofont icofont-speech-comments"></i> <span>0</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </article>
+                    <!--                                    <div class="comment-title">-->
+                    <!--                                        <h4>回复帖<span>2</span></h4>-->
+                    <!--                                    </div>-->
+                    <!--                    整个回复列表-->
+                    <ul class="comment-list">
+                        <!--一个新增的模板-->
+                        <li id="comment0" class="comment-info-inner" style="display: none">
+                            <article>
+                                <div class="comment-thumb">
+                                    <!--                                                <div class="blogThumb">-->
+                                    <img src="images/blog/tst-auth2.jpg" alt="image">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="meta-data">
+                                        <h2>Luisiana garcias</h2>
+                                        <p class="category">Category : <span>Apartment</span></p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                        wisi enim ad minim veniam...</p>
+                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>
+                                </div>
+                                <div class="comment-buttom" style="float: right;">
+                                    <ul style="display: flex">
+                                        <li>1楼</li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont icofont-speech-comments"></i> <span>0</span>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
+                            </article>
+                        </li>
+                        <!--一楼-->
+                        <li id="comment1" class="comment-info-inner">
+                            <article>
+                                <div class="comment-thumb">
+                                    <!--                                                <div class="blogThumb">-->
+                                    <img src="images/blog/tst-auth1.jpg" alt="image">
+                                    <div style="display: block;text-align: center"><h5>楼主</h5></div>
+                                </div>
+                                <div class="comment-content">
+                                    <div class="meta-data">
+                                        <h2>Luisiana garcias</h2>
+                                        <p class="category">Category : <span>Apartment</span></p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                        wisi enim ad minim veniam...</p>
+                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>
+                                </div>
+                                <div class="comment-buttom" style="float: right;">
+                                    <ul style="display: flex">
+                                        <li>1楼</li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont icofont-speech-comments" data-toggle="modal"
+                                                   data-target="#myModal"></i>
+                                                <span>1</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <!--                                            第一个回复的子回复列表-->
+                            <ul class="children">
+                                <li class="comment-info-inner">
+                                    <article>
+                                        <div class="comment-thumb">
+                                            <img src="images/blog/tst-auth2.jpg" alt="image">
+                                        </div>
+                                        <div class="comment-content">
+                                            <div class="meta-data">
+                                                <h2>Luisiana garcias</h2>
+                                                <p class="category">Category : <span>Apartment</span></p>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                                volutpat. Ut wisi enim ad minim veniam...</p>
+                                            <!--                                                            <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
+                                        </div>
+                                        <div class="comment-buttom" style="float: right;">
+                                            <ul style="display: flex">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="icofont icofont-speech-comments"></i> <span>0</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </article>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--                                        二楼-->
+                        <li id="comment2" class="comment-info-inner">
+                            <article>
+                                <div class="comment-thumb">
+                                    <!--                                                <div class="blogThumb">-->
+                                    <img src="images/blog/tst-auth1.jpg" alt="image">
+                                    <div style="display: block;text-align: center"><h5>楼主</h5></div>
+                                </div>
+                                <div class="comment-content">
+                                    <div class="meta-data">
+                                        <h2>Luisiana garcias</h2>
+                                        <p class="category">Category : <span>Apartment</span></p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                        wisi enim ad minim veniam...</p>
+                                    <!--                                                    <a href="#"><i class="icofont icofont-reply-all"></i><span>02</span></a>-->
+                                </div>
+                                <div class="comment-buttom" style="float: right;">
+                                    <ul style="display: flex">
+                                        <li>2楼</li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont icofont-speech-comments"></i> <span>0</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
                 <div class="leave-comment">
                     <div class="comment-title">
                         <h4>发表回复</h4>
@@ -344,7 +330,7 @@
                     <div class="cmnt-box">
                         <form action="#" id="contact-form">
                             <textarea name="msg" id="message" placeholder="回复"></textarea>
-                            <input value="发表" id="comment-submit" type="submit">
+                            <input value="发表" id="comment-submit" type="button" onclick="addLou()">
                         </form>
                     </div>
                 </div>
@@ -440,6 +426,7 @@
 <!-- All JavaScript files
 ================================================== -->
 <script src="js/blog.js"></script>
+<script src="js/blog-details.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/isotope-masonary.js"></script>
