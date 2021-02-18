@@ -448,7 +448,7 @@ Global Elements Style
     margin-left: 150px;
 }
 
-.btn{
+#tieBaTask btn{
     display: block;
     margin: 10px;
     /*margin-top: 10px;*/
@@ -3819,6 +3819,17 @@ Testimonial Style
 /*--------------------------------------------------------------
 Blog Style
 ----------------------------------------------------------------*/
+
+#blogCe .btn{
+    display: block;
+    background-color: #1f3d9d;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    margin: 15px;
+    font-size: 20px;
+}
 
 .blog-wrap .blog-img {
     position: relative;
