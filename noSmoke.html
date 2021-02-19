@@ -116,7 +116,7 @@
                                 <li><a href="appoinment.html">挂号情况</a></li>
                                 <li><a href="weTalk.html">控烟戒烟</a>
                                     <ul class="submenu">
-                                        <li ><a href="noSmoke.html">无烟训练</a></li>
+                                        <li><a href="noSmoke.html">无烟训练</a></li>
                                         <li><a href="quitSmoke.html">戒烟计划</a></li>
                                         <li><a href="game.html">游戏</a></li>
                                         <li class="active"><a href="weTalk.html">贴吧</a></li>
@@ -139,13 +139,13 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="banner-content">
-                        <h2><i class="icofont icofont-caret-left"></i>控烟戒烟<i class="icofont icofont-caret-right"></i>
+                        <h2><i class="icofont icofont-caret-left"></i>无烟训练<i class="icofont icofont-caret-right"></i>
                         </h2>
-                        <h4>帮助您戒除烟瘾</h4>
+                        <h4>记录您连续不吸烟的持续时间</h4>
                     </div>
                     <div class="crumbs">
                         <ul>
-                            <li><a href="gallery-masonry.html">控烟戒烟</a></li>
+                            <li><a href="gallery-masonry.html">控烟戒烟\无烟训练</a></li>
                         </ul>
                     </div>
                 </div>
@@ -157,140 +157,16 @@
     <!-- gallery Start -->
     <section class="gallery-page-area pb-60">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="project-menu filter-button-group mb-60">
-                        <button class="" onclick=wuyanActive()>无烟训练</button>
-                        <button class="" onclick=jieYanActive()>戒烟计划</button>
-                        <button class="" data-filter=".hospital">游戏</button>
-                        <button class="active" onclick=tieBaActive()>贴吧</button>
-                        <!--                        <button class="" data-filter=".hospitality">hospitality</button>-->
-                        <!--                        <button class="" data-filter=".medicine">medicine</button>-->
-                    </div>
-                </div>
+            <h1 style="text-align: center">已连续坚持<span id="weiDay"></span>天未吸烟</h1>
+            <div id="calendar_div" class="div_calendar">
             </div>
-            <div id="wuYanTask" style="display: none">
-                <h1 style="text-align: center">已连续坚持<span id="weiDay"></span>天未吸烟</h1>
-                <div id="calendar_div" class="div_calendar">
-                </div>
-                <div class="div_changeMonth" style="text-align: center">
-                    <button type="button" onclick="upMonth()" class="btn btn-success btn-lg">上个月</button>
-                    <button type="button" onclick="nextMonth()" class="btn btn-success btn-lg">下个月</button>
-                    <button type="button" onclick="daKa()" class="btn btn-secondary btn-lg" id="daKaBtn">今日未吸烟打卡
-                    </button>
-                </div>
-                <div id="current_date_label" class="div_target_label" style="text-align: center"></div>
+            <div class="div_changeMonth" style="text-align: center">
+                <button type="button" onclick="upMonth()" class="btn btn-success btn-lg">上个月</button>
+                <button type="button" onclick="nextMonth()" class="btn btn-success btn-lg">下个月</button>
+                <button type="button" onclick="daKa()" class="btn btn-secondary btn-lg" id="daKaBtn">今日未吸烟打卡
+                </button>
             </div>
-            <div id="jieYanTask" style="display: none">
-                <h1 style="text-align: center">戒烟</h1>
-            </div>
-            <div id="tieBaTask" style="display: block;text-align: center">
-                <!--                第二种贴吧方案-->
-                <div class="row" style="text-align: center">
-                    <!--                    贴文内容-->
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="blog-wrap">
-                                    <div class="blog-img">
-                                        <img src="images/blog/1.jpg" alt="blog/1.jpg"/>
-                                        <a href="#"><i class="fa fa-chain center-icon"></i></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-user"></i> By Admin</a></li>
-                                                <li><a href="#"><i class="fa fa-comment"></i> 2 评论</a></li>
-                                                <li><a href="#"><i class="fa fa-heart"></i> 10 赞</a></li>
-                                            </ul>
-                                        </div>
-                                        <h3><a href="#">急性咳嗽和慢性咳嗽有哪些区别 </a></h3>
-                                        <a href="#" class="readmore">详情</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="blog-wrap">
-                                    <div class="blog-img">
-                                        <img src="images/blog/2.jpg" alt=""/>
-                                        <a href="#"><i class="fa fa-chain center-icon"></i></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-user"></i> By Admin</a></li>
-                                                <li><a href="#"><i class="fa fa-comment"></i> 0 评论</a></li>
-                                                <li><a href="#"><i class="fa fa-heart"></i> 10 赞</a></li>
-                                            </ul>
-                                        </div>
-                                        <h3><a href="#">哮喘病人吃什么水果好呢 </a></h3>
-                                        <a href="#" class="readmore">详情</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="blog-wrap">
-                                    <div class="blog-img">
-                                        <img src="images/blog/3.jpg" alt="blog/3.jpg"/>
-                                        <a href="blog-details.html?id=1"><i class="fa fa-chain center-icon"></i></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-user"></i> By Admin</a></li>
-                                                <li><a href="#"><i class="fa fa-comment"></i> 0 评论</a></li>
-                                                <li><a href="#"><i class="fa fa-heart"></i> 10 赞</a></li>
-                                            </ul>
-                                        </div>
-                                        <h3><a href="#">春节慢阻肺患者有什么要注意的？</a></h3>
-                                        <a href="blog-details.html?id=1" class="readmore">详情</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="blog-wrap">
-                                    <div class="blog-img">
-                                        <img src="images/blog/2.jpg" alt="blog/2.jpg"/>
-                                        <a href="#"><i class="fa fa-chain center-icon"></i></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-user"></i> By Admin</a></li>
-                                                <li><a href="#"><i class="fa fa-comment"></i> 2 评论</a></li>
-                                                <li><a href="#"><i class="fa fa-heart"></i> 10 赞</a></li>
-                                            </ul>
-                                        </div>
-                                        <h3><a href="#">如何提高慢阻肺患者的依从性？ </a></h3>
-                                        <a href="#" class="readmore">详情</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                        页码-->
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <div class="pagination-wrapper">
-                                    <ul>
-                                        <!--                                        <li><a href="#"><i class="icofont icofont-bubble-left icon"></i>Prevt</a></li>-->
-                                        <li><span>1</span></li>
-                                        <li><a href="#">2</a></li>
-                                        <!--                                        <li><a href="#">3</a></li>-->
-                                        <!--                                        <li><a href="#">4</a></li>-->
-                                        <li><a href="#">next<i class="icofont icofont-bubble-right icon"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--                    侧边条条-->
-                    <div class="col-md-2" id="blogCe" style="margin-top: 20px;float: left">
-                        <button class="btn">我要发帖</button>
-                        <button class="btn">我的帖子</button>
-                    </div>
-                </div>
-            </div>
-
+            <div id="current_date_label" class="div_target_label" style="text-align: center"></div>
         </div>
     </section>
     <!-- gallery End -->
