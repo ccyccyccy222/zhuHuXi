@@ -11,10 +11,23 @@ function submit(){
     let title=document.getElementById("addTitle").value;
     let content=document.getElementById("addContent").value;
 
+    //把这个添加的信息放进仓库
+    let store = createStore(reducer);
+    store.dispatch({type:"add",id:1,title:title,content:content});
+    let stateLength=store.getState().blogDetails.length;
+    console.log("stateLength");
+    console.log(stateLength);
 
     const sourceNode = document.querySelectorAll(".col-md-6"); // 获得被克隆的节点对象
     //前面有2个.col-md-6类，所以这一个的下标为2
-    const clonedNode = sourceNode[5].cloneNode(true); // 克隆节点
+    const clonedNode = sourceNode[4].cloneNode(true); // 克隆节点
+
+    let aArray=clonedNode.getElementsByTagName("a");
+    console.log("aArray[0]    aArray[1]");
+    console.log(aArray[0]+"  "+aArray[1]);
+    console.log(aArray[0].href+"  "+aArray[1].href);
+    clonedNode.getElementsByTagName("a")[0].href="blog-details-empty.html?id="+stateLength;
+    clonedNode.getElementsByTagName("a")[1].href="blog-details-empty.html?id="+stateLength;
 
     console.log("clonedNode.getElementsByTagName(\"h3\").[0]innerText before");
     console.log(clonedNode.getElementsByTagName("h3")[0].innerText);

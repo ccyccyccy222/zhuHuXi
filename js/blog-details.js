@@ -88,5 +88,9 @@ addXiaoLou = (ev) => {
     arraySpan[1].innerText=number.toString();
 }
 
+test=()=>{
+    alert("no problem");
+}
+
 
 
