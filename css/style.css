@@ -1440,6 +1440,25 @@ Roboto slider Style
     animation-delay: 1.5s;
 }
 
+.slide-title {
+    display: flex;
+}
+
+.slide-title .text {
+    padding-top: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    float: bottom;
+}
+
+.slide-title .number {
+    font-size: 100px;
+    margin: 10px;
+    color: white;
+    float: top
+}
+
 /*-------------------------------------------
     #hero style 1
 --------------------------------------------*/
@@ -1565,7 +1584,7 @@ Roboto slider Style
     }
 }
 
-.hero-style-1 .slide-caption .slide-title h2, .hero-style-2 .slide-caption .slide-title h2 {
+.hero-style-1 .slide-title h2, .hero-style-2 .slide-caption .slide-title h2 {
     font-size: 54px;
     color: #fff;
     text-transform: capitalize;
@@ -3666,12 +3685,14 @@ Single Doctor Style
 /*--------------------------------------------------------------
 Testimonial Style
 ----------------------------------------------------------------*/
-.testimonials-section{
+.testimonials-section {
     margin: 0;
     padding: 0;
 }
 
-.testimonials-section li{list-style:none}
+.testimonials-section li {
+    list-style: none
+}
 
 .testimonials-section div, span, a {
     -webkit-box-sizing: border-box;

@@ -1,12 +1,3 @@
-// urlinfo = window.location.href;  //获取当前页面的url
-// console.log(urlinfo)
-// len = urlinfo.split("?");//获取url的长度
-// newsidinfo = len[1];//取出参数字符串 这里会获得类似“id=1”这样的字符串
-// console.log(newsidinfo);
-
-
-// submit=()=>{
-
 //页面预处理
 const storage = window.sessionStorage;
 let str0=storage.getItem("title");
@@ -24,6 +15,15 @@ if(str0!=null){
         console.log(aArray[0].href+"  "+aArray[1].href);
         clonedNode0.getElementsByTagName("a")[0].href="blog-details-empty.html?id="+i;
         clonedNode0.getElementsByTagName("a")[1].href="blog-details-empty.html?id="+i;
+
+        let divAuthor=clonedNode0.querySelectorAll(".blog-meta");
+        // console.log("clonedNode.querySelectorAll(\".blog-meta\")");
+        // console.log(divAuthor[0]);
+        let liAuthor=divAuthor[0].getElementsByTagName("li");
+        // console.log("liAuthor[0]");
+        // console.log(liAuthor[0]);
+        console.log("liAuthor[0].innerText");
+        liAuthor[0].innerText="By 钟小山";
 
         clonedNode0.getElementsByTagName("h3")[0].innerText=array0[i];
         console.log("页面预处理后标题");
@@ -62,6 +62,15 @@ function submit(){
     //前面有2个.col-md-6类，所以这一个的下标为2
     // const clonedNode = sourceNode[4].cloneNode(true); // 克隆节点
     const clonedNode = sourceNode[3].cloneNode(true); // 克隆节点
+
+    let divAuthor=clonedNode.querySelectorAll(".blog-meta");
+    // console.log("clonedNode.querySelectorAll(\".blog-meta\")");
+    // console.log(divAuthor[0]);
+    let liAuthor=divAuthor[0].getElementsByTagName("li");
+    // console.log("liAuthor[0]");
+    // console.log(liAuthor[0]);
+    console.log("liAuthor[0].innerText");
+    liAuthor[0].innerText="By 钟小山";
 
     let aArray=clonedNode.getElementsByTagName("a");
     console.log("aArray[0]    aArray[1]");

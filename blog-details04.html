@@ -102,7 +102,6 @@
         <!-- Header Top end -->
 
         <!-- Header Bottom Start -->
-<!--        导航条-->
         <div class="header-bottom">
             <div class="container">
                 <div class="row clearfix">
@@ -155,147 +154,188 @@
     </section>
     <!-- banner area end -->
 
-    <!-- gallery Start -->
-    <section class="gallery-page-area pb-60">
+
+    <!--Welcome Section Start-->
+    <section class="welcome-section pt-60 pb-90">
         <div class="container">
-            <div class="row" style="text-align: center">
+            <!-- 贴吧具体内容 -->
+            <div class="blg_inner_carousel swiper-container" style="width:800px;margin: auto">
                 <!-- 模态框 -->
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <!-- 模态框头部 -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">发帖</h4>
-                                <!--                                <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                            </div>
-
-                            <!-- 模态框主体 -->
-                            <div class="modal-body" style="display: block;padding: 15px">
-                                <!--                                <input type="text" placeholder="请填写标题" size="70">-->
-                                <!--                                <textarea name="msg" id="subMessage" placeholder="帖子内容"></textarea>-->
-                                <input id="addTitle" type="text" class="form-control" placeholder="请填写标题">
-                                <textarea id="addContent" class="form-control" style="margin-top: 15px;margin-bottom: 10px" rows="6"></textarea>
-                            </div>
-
-                            <!-- 模态框底部 -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" onclick="submit()">发表</button>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                            </div>
-
-                        </div>
+                <div class="about-author" style="margin-top: -20px;">
+                    <div class="abt-auth-content">
+                        <h4>如何提高慢阻肺患者的依从性？</h4>
                     </div>
                 </div>
-                <!--                    贴文内容-->
-                <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="blog-wrap">
-                                <div class="blog-img">
-                                    <img src="images/blog/5.jfif" alt="blog/5.jfif"/>
-                                    <a href="#"><i class="fa fa-chain center-icon"></i></a>
+                <div class="comment-area">
+                    <!--                                    <div class="comment-title">-->
+                    <!--                                        <h4>回复帖<span>2</span></h4>-->
+                    <!--                                    </div>-->
+                    <!--                    整个回复列表-->
+                    <ul class="comment-list">
+                        <!--一个新增的模板-->
+                        <li id="comment0" class="comment-info-inner" style="display: none">
+                            <article>
+                                <div class="comment-thumb">
+                                    <!--                                                <div class="blogThumb">-->
+                                    <img src="images/blog/tst-auth2.jpg" alt="image">
                                 </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <ul>
-                                            <li> By Admin</li>
-                                            <!--                                            <li><a href="#"><i class="fa fa-comment"></i> 2 评论</a></li>-->
-                                            <!--                                            <li><a href="#"><i class="fa fa-heart"></i> 10 赞</a></li>-->
-                                        </ul>
+                                <div class="comment-content">
+                                    <div class="meta-data">
+                                        <h2>Luisiana garcias</h2>
                                     </div>
-                                    <h3>急性咳嗽和慢性咳嗽有哪些区别 </h3>
-                                    <a href="#" class="readmore">详情</a>
+                                    <p>慢阻肺一种慢性呼吸系统疾病，
+                                        导致许多慢阻肺患者在稳定期的时候，没有坚持用药，
+                                        到急性加重的时候才开始治疗，但是肺功能已经恶化。
+                                        如何才能提高慢阻肺患者的依从性，是许多医护人员一直关心的问题。</p>
+<!--                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="blog-wrap">
-                                <div class="blog-img">
-                                    <img src="images/blog/2.jpg" alt=""/>
-                                    <a href="blog-details02.html"><i class="fa fa-chain center-icon"></i></a>
+                                <div class="comment-buttom" style="float: right;">
+                                    <ul style="display: flex">
+                                        <li>1楼</li>
+                                        <li>
+                                            <a data-toggle="collapse" href="#collapseExample0"
+                                               aria-expanded="false">
+                                                <i class="icofont icofont-speech-comments"></i>
+                                                <span>0</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <ul>
-                                            <li>By 李强</li>
-                                            <!--                                            <li><a href="#"><i class="fa fa-comment"></i> 0 评论</a></li>-->
-                                            <!--                                            <li><a href="#"><i class="fa fa-heart"></i> 10 赞</a></li>-->
-                                        </ul>
+                            </article>
+<!--                            回复折叠板-->
+                            <div class="collapse" id="collapseExample0">
+                                <div class="card-body" style="margin: 0 50px 0 50px">
+                                    <h5 class="card-title">回复</h5>
+                                    <div class="input-group mb-3" style="display: flex">
+                                        <input type="text" maxlength="100" style="margin: auto" class="form-control" id="collapseInput0">
+                                        <button class="btn btn-primary" type="button" onclick="addXiaoLou()" id="button0">提交</button>
                                     </div>
-                                    <h3>哮喘病人吃什么水果好呢 </h3>
-                                    <a href="blog-details02.html" class="readmore">详情</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="blog-wrap">
-                                <div class="blog-img">
-                                    <img src="images/blog/6.jfif" alt="blog/6.jfif"/>
-                                    <a href="blog-details03.html?id=1"><i class="fa fa-chain center-icon"></i></a>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <ul>
-                                            <li> By Luisiana garcias</li>
-                                            <!--                                            <li><a href="#"><i class="fa fa-comment"></i> 2 评论</a></li>-->
-                                            <!--                                            <li><a href="#"><i class="fa fa-heart"></i> 10 赞</a></li>-->
-                                        </ul>
-                                    </div>
-                                    <h3>春节慢阻肺患者有什么要注意的？</h3>
-                                    <a href="blog-details03.html" class="readmore">详情</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="blog-wrap">
-                                <div class="blog-img">
-                                    <img src="images/blog/3.jpg" alt="3.jpg"/>
-                                    <a href="#"><i class="fa fa-chain center-icon"></i></a>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <ul>
-                                            <li> By Luisiana garcias</li>
-                                            <!--                                            <li><a href="#"><i class="fa fa-comment"></i> 2 评论</a></li>-->
-                                            <!--                                            <li><a href="#"><i class="fa fa-heart"></i> 10 赞</a></li>-->
-                                        </ul>
-                                    </div>
-                                    <h3>如何提高慢阻肺患者的依从性？ </h3>
-                                    <a href="#" class="readmore">详情</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--                        页码-->
-                    <!--                    <div class="row">-->
-                    <!--                        <div class="col-md-12 text-center">-->
-                    <!--                            <div class="pagination-wrapper">-->
-                    <!--                                <ul>-->
-                    <!--                                    &lt;!&ndash;                                        <li><a href="#"><i class="icofont icofont-bubble-left icon"></i>Prevt</a></li>&ndash;&gt;-->
-                    <!--                                    <li><span>1</span></li>-->
-                    <!--                                    <li><a href="#">2</a></li>-->
-                    <!--                                    &lt;!&ndash;                                        <li><a href="#">3</a></li>&ndash;&gt;-->
-                    <!--                                    &lt;!&ndash;                                        <li><a href="#">4</a></li>&ndash;&gt;-->
-                    <!--                                    <li><a href="#">next<i class="icofont icofont-bubble-right icon"></i></a></li>-->
-                    <!--                                </ul>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                </div>
-                <!--                    侧边条条-->
-                <div class="col-md-2" id="blogCe" style="margin-top: 20px;float: left">
-                    <button class="btn" data-toggle="modal"
-                            data-target="#myModal">我要发帖
-                    </button>
-                    <!--                    <button class="btn">我的帖子</button>-->
-                </div>
 
+                                </div>
+                            </div>
+                            <ul class="children">
+                            </ul>
+                        </li>
+                        <!--一楼-->
+                        <li id="comment1" class="comment-info-inner">
+                            <article>
+                                <div class="comment-thumb">
+                                    <!--                                                <div class="blogThumb">-->
+                                    <img src="images/blog/tst-auth1.jpg" alt="image">
+                                    <div style="display: block;text-align: center"><h5>楼主</h5></div>
+                                </div>
+                                <div class="comment-content">
+                                    <div class="meta-data">
+                                        <h2>Luisiana garcias</h2>
+                                    </div>
+                                    <p>慢阻肺一种慢性呼吸系统疾病，
+                                        导致许多慢阻肺患者在稳定期的时候，没有坚持用药，
+                                        到急性加重的时候才开始治疗，但是肺功能已经恶化。
+                                        如何才能提高慢阻肺患者的依从性，是许多医护人员一直关心的问题。.</p>
+<!--                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
+                                </div>
+                                <div class="comment-buttom" style="float: right;">
+                                    <ul style="display: flex">
+                                        <li>1楼</li>
+                                        <li>
+                                            <a data-toggle="collapse" href="#collapseExample1"
+                                               aria-expanded="false">
+                                                <i class="icofont icofont-speech-comments"></i>
+                                                <span>0</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+<!--                            <div class="collapse" id="collapseExample2" style="padding: 0 50px 0 50px">-->
+                            <div class="collapse" id="collapseExample1">
+                            <div class="card-body" style="margin: 0 50px 0 50px">
+                                    <h5 class="card-title">回复</h5>
+                                    <div class="input-group mb-3" style="display: flex">
+                                        <input type="text" maxlength="100" style="margin: auto" class="form-control" id="collapseInput1">
+                                        <button class="btn btn-primary" type="button" onclick="addXiaoLou()" id="button1">提交</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--                                            第一个回复的子回复列表-->
+                            <ul class="children">
+                                <li class="comment-info-inner" id="subLi0">
+                                    <article>
+                                        <div class="comment-thumb">
+                                            <img src="images/blog/tst-auth2.jpg" alt="image">
+                                        </div>
+                                        <div class="comment-content">
+                                            <div class="meta-data">
+                                                <h2>钟小山</h2>
+                                            </div>
+                                            <p>稳定性如何干预性治疗？求解答</p>
+                                        </div>
+                                    </article>
+
+                                </li>
+
+                            </ul>
+                        </li>
+                        <!--                                        二楼-->
+                        <li id="comment2" class="comment-info-inner">
+                            <article>
+                                <div class="comment-thumb">
+                                    <!--                                                <div class="blogThumb">-->
+                                    <img src="images/blog/tst-auth3.jpg" alt="image">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="meta-data">
+                                        <h2>李强</h2>
+                                    </div>
+                                    <p>根据个人的病情，制定不同的方案吧</p>
+                                    <!--                                                    <a href="#"><i class="icofont icofont-reply-all"></i><span>02</span></a>-->
+                                </div>
+                                <div class="comment-buttom" style="float: right;">
+                                    <ul style="display: flex">
+                                        <li>2楼</li>
+                                        <li>
+                                            <a data-toggle="collapse" href="#collapseExample2"
+                                               aria-expanded="false">
+                                                <i class="icofont icofont-speech-comments"></i>
+                                                <span>0</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card-body" style="margin: 0 50px 0 50px">
+                                    <h5 class="card-title">回复</h5>
+                                    <div class="input-group mb-3" style="display: flex">
+                                        <input type="text" maxlength="100" style="margin: auto" class="form-control" id="collapseInput2">
+                                        <button class="btn btn-primary" type="button" onclick="addXiaoLou()" id="button2">提交</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <ul class="children">
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="leave-comment">
+                    <div class="comment-title">
+                        <h4>发表回复</h4>
+                    </div>
+                    <div class="cmnt-box">
+                        <form action="#" id="contact-form">
+                            <textarea name="msg" id="message" placeholder="回复"></textarea>
+                            <input value="发表" id="comment-submit" type="button" onclick="addLou()">
+                        </form>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
-    <!-- gallery End -->
+    <!--Welcome Section End-->
 
+    <!--Footer Start-->
     <footer>
         <div class="footer-area">
             <div class="container">
@@ -306,8 +346,7 @@
                                 <a href="home1.html"><img src="images/logo-2.png" alt="logo"></a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             <div class="footer-tags">
                                 <h2>Tags</h2>
                                 <a href="#">webdesign</a>
@@ -374,6 +413,7 @@
             </div>
         </div>
     </footer>
+    <!--Footer End-->
 
 </div>
 <!-- Page-wrapper End -->
@@ -381,9 +421,8 @@
 
 <!-- All JavaScript files
 ================================================== -->
-<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+<!--<script src="js/blog.js"></script>-->
 <script src="js/blog-details.js"></script>
-<script src="js/blog.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/isotope-masonary.js"></script>

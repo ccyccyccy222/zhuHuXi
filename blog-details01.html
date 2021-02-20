@@ -110,7 +110,7 @@
                     <div class="main-menu">
                         <nav id="menu">
                             <ul>
-                                <li><a href="index.html">医患交流<span class="redpoint">2</span></a>
+                                <li><a href="index.html"><span>医患交流</span><span class="redpoint">2</span></a>
                                 </li>
                                 <li><a href="testimonials.html">个人资料</a></li>
                                 <li><a href="appoinment.html">挂号情况</a></li>
@@ -160,10 +160,17 @@
         <div class="container">
             <!-- 贴吧具体内容 -->
             <div class="blg_inner_carousel swiper-container" style="width:800px;margin: auto">
-                <div class="about-author" style="margin-top: -20px;text-align: center">
-                        <h4></h4>
+                <!-- 模态框 -->
+                <div class="about-author" style="margin-top: -20px;">
+                    <div class="abt-auth-content">
+                        <h4>急性咳嗽和慢性咳嗽有哪些区别</h4>
+                    </div>
                 </div>
                 <div class="comment-area">
+                    <!--                                    <div class="comment-title">-->
+                    <!--                                        <h4>回复帖<span>2</span></h4>-->
+                    <!--                                    </div>-->
+                    <!--                    整个回复列表-->
                     <ul class="comment-list">
                         <!--一个新增的模板-->
                         <li id="comment0" class="comment-info-inner" style="display: none">
@@ -171,16 +178,16 @@
                                 <div class="comment-thumb">
                                     <!--                                                <div class="blogThumb">-->
                                     <img src="images/blog/tst-auth2.jpg" alt="image">
-                                    <div style="display: block;text-align: center"><h5>楼主</h5></div>
                                 </div>
                                 <div class="comment-content">
                                     <div class="meta-data">
-                                        <h2>钟小山</h2>
+                                        <h2>Luisiana garcias</h2>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                                        wisi enim ad minim veniam...</p>
-                                    <!--                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
+                                    <p>慢阻肺一种慢性呼吸系统疾病，
+                                        导致许多慢阻肺患者在稳定期的时候，没有坚持用药，
+                                        到急性加重的时候才开始治疗，但是肺功能已经恶化。
+                                        如何才能提高慢阻肺患者的依从性，是许多医护人员一直关心的问题。</p>
+<!--                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
                                 </div>
                                 <div class="comment-buttom" style="float: right;">
                                     <ul style="display: flex">
@@ -195,7 +202,7 @@
                                     </ul>
                                 </div>
                             </article>
-                            <!--                            回复折叠板-->
+<!--                            回复折叠板-->
                             <div class="collapse" id="collapseExample0">
                                 <div class="card-body" style="margin: 0 50px 0 50px">
                                     <h5 class="card-title">回复</h5>
@@ -209,20 +216,24 @@
                             <ul class="children">
                             </ul>
                         </li>
-<!--                        一楼-->
+                        <!--一楼-->
                         <li id="comment1" class="comment-info-inner">
                             <article>
                                 <div class="comment-thumb">
                                     <!--                                                <div class="blogThumb">-->
-                                    <img src="images/blog/tst-auth2.jpg" alt="image">
+                                    <img src="images/blog/tst-auth4.jpg" alt="image">
                                     <div style="display: block;text-align: center"><h5>楼主</h5></div>
                                 </div>
                                 <div class="comment-content">
                                     <div class="meta-data">
-                                        <h2>钟小山</h2>
+                                        <h2>Admin</h2>
                                     </div>
-                                    <p></p>
-                                    <!--                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
+                                    <p>咳嗽是可以分为急性咳嗽以及慢性咳嗽的，
+                                        并且这两种不同类型的咳嗽有着不同的症状表现，
+                                        对于这种疾病的治疗方法也是不一样的，
+                                        我们需要注意做好对于不同类型的咳嗽的了解，
+                                        那么急性咳嗽和慢性咳嗽有哪些区别呢?.</p>
+<!--                                    <a href="#"><i class="icofont icofont-reply-all"></i></a>-->
                                 </div>
                                 <div class="comment-buttom" style="float: right;">
                                     <ul style="display: flex">
@@ -231,15 +242,15 @@
                                             <a data-toggle="collapse" href="#collapseExample1"
                                                aria-expanded="false">
                                                 <i class="icofont icofont-speech-comments"></i>
-                                                <span>1</span>
+                                                <span>0</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </article>
-                            <!--                            <div class="collapse" id="collapseExample2" style="padding: 0 50px 0 50px">-->
+<!--                            <div class="collapse" id="collapseExample2" style="padding: 0 50px 0 50px">-->
                             <div class="collapse" id="collapseExample1">
-                                <div class="card-body" style="margin: 0 50px 0 50px">
+                            <div class="card-body" style="margin: 0 50px 0 50px">
                                     <h5 class="card-title">回复</h5>
                                     <div class="input-group mb-3" style="display: flex">
                                         <input type="text" maxlength="100" style="margin: auto" class="form-control" id="collapseInput1">
@@ -250,21 +261,109 @@
                             </div>
                             <!--                                            第一个回复的子回复列表-->
                             <ul class="children">
-                                <li class="comment-info-inner" id="subLi0" style="display: none">
+                                <li class="comment-info-inner" id="subLi0">
                                     <article>
                                         <div class="comment-thumb">
-                                            <img src="images/blog/tst-auth2.jpg" alt="image">
+                                            <img src="images/blog/tst-auth3.jpg" alt="image">
                                         </div>
                                         <div class="comment-content">
                                             <div class="meta-data">
-                                                <h2>钟小山</h2>
+                                                <h2>李强</h2>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                                volutpat. Ut wisi enim ad minim veniam...</p>
+                                            <p>好问题</p>
                                         </div>
                                     </article>
                                 </li>
+
+                            </ul>
+                        </li>
+                        <!--                                        二楼-->
+                        <li id="comment2" class="comment-info-inner">
+                            <article>
+                                <div class="comment-thumb">
+                                    <!--                                                <div class="blogThumb">-->
+                                    <img src="images/blog/tst-auth1.jpg" alt="image">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="meta-data">
+                                        <h2>Luisiana garcias</h2>
+                                    </div>
+                                    <p>一般将宝宝的咳嗽分为急性咳嗽和慢性咳嗽两大类，
+                                        急性咳嗽主要和呼吸道的感染有关。
+                                        一些病毒或细菌会引发上呼吸道感染，出现感冒、鼻窦炎、
+                                        支气管炎、甚至肺炎。通常在感染症状消除之后，咳嗽的情形也会跟着消失。
+                                        例如呼吸道融合病毒最常造成一岁以下宝宝急性呼吸道感染的主因，
+                                        尤其容易引发急性细支气管炎，症状除了咳嗽、流鼻水、呼吸变浅快之外，
+                                        有时还会出现咻咻的喘鸣声，严重时还有可能出现呼吸窘迫，甚至发绀的情形。</p>
+                                    <!--                                                    <a href="#"><i class="icofont icofont-reply-all"></i><span>02</span></a>-->
+                                </div>
+                                <div class="comment-buttom" style="float: right;">
+                                    <ul style="display: flex">
+                                        <li>2楼</li>
+                                        <li>
+                                            <a data-toggle="collapse" href="#collapseExample2"
+                                               aria-expanded="false">
+                                                <i class="icofont icofont-speech-comments"></i>
+                                                <span>0</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card-body" style="margin: 0 50px 0 50px">
+                                    <h5 class="card-title">回复</h5>
+                                    <div class="input-group mb-3" style="display: flex">
+                                        <input type="text" maxlength="100" style="margin: auto" class="form-control" id="collapseInput2">
+                                        <button class="btn btn-primary" type="button" onclick="addXiaoLou()" id="button2">提交</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <ul class="children">
+                            </ul>
+                        </li>
+                        <!--                                        三楼-->
+                        <li id="comment3" class="comment-info-inner">
+                            <article>
+                                <div class="comment-thumb">
+                                    <!--                                                <div class="blogThumb">-->
+                                    <img src="images/blog/tst-auth1.jpg" alt="image">
+                                </div>
+                                <div class="comment-content">
+                                    <div class="meta-data">
+                                        <h2>Luisiana garcias</h2>
+                                    </div>
+                                    <p>至于慢性咳嗽，引发的原因就比急性咳嗽要来得多且复杂，
+                                        例如因过敏所引发的咳嗽，一般在夜间睡眠时咳嗽会加剧，
+                                        有些会出现哮鸣声或喘的现象。一般过敏性肺炎所引发的咳嗽，
+                                        常常和外在环境刺激有关，医学上又称之为过敏原。</p>
+                                    <!--                                                    <a href="#"><i class="icofont icofont-reply-all"></i><span>02</span></a>-->
+                                </div>
+                                <div class="comment-buttom" style="float: right;">
+                                    <ul style="display: flex">
+                                        <li>2楼</li>
+                                        <li>
+                                            <a data-toggle="collapse" href="#collapseExample2"
+                                               aria-expanded="false">
+                                                <i class="icofont icofont-speech-comments"></i>
+                                                <span>0</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <div class="collapse" id="collapseExample3">
+                                <div class="card-body" style="margin: 0 50px 0 50px">
+                                    <h5 class="card-title">回复</h5>
+                                    <div class="input-group mb-3" style="display: flex">
+                                        <input type="text" maxlength="100" style="margin: auto" class="form-control" id="collapseInput3">
+                                        <button class="btn btn-primary" type="button" onclick="addXiaoLou()" id="button3">提交</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <ul class="children">
                             </ul>
                         </li>
                     </ul>
@@ -371,7 +470,6 @@
 
 <!-- All JavaScript files
 ================================================== -->
-<script src="js/emptyBlog.js"></script>
 <!--<script src="js/blog.js"></script>-->
 <script src="js/blog-details.js"></script>
 <script src="js/jquery.min.js"></script>
