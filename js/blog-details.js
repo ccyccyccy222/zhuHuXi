@@ -74,6 +74,8 @@ addXiaoLou = (ev) => {
     const sourceNode = document.getElementById("subLi0"); // 获得被克隆的节点对象
     const clonedNode = sourceNode.cloneNode(true); // 克隆节点
     clonedNode.setAttribute("id", "subLi" + index); // 修改一下id 值，避免id 重复
+    //如果是从空白页开始，则那个子回复是设置为不可见的
+    clonedNode.style.display="block";
     let oldP = clonedNode.getElementsByTagName("p");
     oldP[1].innerText = message;
     array[a[1]].appendChild(clonedNode); // 在父节点插入克隆的节点
@@ -88,9 +90,6 @@ addXiaoLou = (ev) => {
     arraySpan[1].innerText=number.toString();
 }
 
-test=()=>{
-    alert("no problem");
-}
 
 
 
