@@ -10,41 +10,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="完成了个人资料页面">
-      <change afterPath="$PROJECT_DIR$/blog-details01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-details03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-details04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/tst-auth3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blog/tst-auth4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/slider/tree.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/quitSmoke.js" afterDir="false" />
+    <list default="true" id="fdf9d299-75c7-49fa-a14a-bf8bfb03139e" name="Default Changelist" comment="大体我负责的前端都完成了">
+      <change afterPath="$PROJECT_DIR$/js/xiaoXi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appoinment.html" beforeDir="false" afterPath="$PROJECT_DIR$/appoinment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-details-empty.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-details-empty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-details02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-withsidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-withsidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-details01.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-details01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-details02.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-details02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-details03.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-details03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-details04.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-details04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-withsidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery-Foure-column.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery-Foure-column.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery-masonry.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery-masonry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery-Foure-column.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery-masonry.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home1.html" beforeDir="false" afterPath="$PROJECT_DIR$/home1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-3.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/blog-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/blog-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/emptyBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/emptyBlog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/redux/reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/redux/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/noSmoke.html" beforeDir="false" afterPath="$PROJECT_DIR$/noSmoke.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quitSmoke.html" beforeDir="false" afterPath="$PROJECT_DIR$/quitSmoke.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service2.html" beforeDir="false" afterPath="$PROJECT_DIR$/service2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/team-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testimonials.html" beforeDir="false" afterPath="$PROJECT_DIR$/testimonials.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weTalk.html" beforeDir="false" afterPath="$PROJECT_DIR$/weTalk.html" afterDir="false" />
     </list>
@@ -130,7 +125,9 @@
       <workItem from="1613725899796" duration="5787000" />
       <workItem from="1613782917506" duration="13146000" />
       <workItem from="1613798750101" duration="1536000" />
-      <workItem from="1613807320950" duration="17251000" />
+      <workItem from="1613807320950" duration="21394000" />
+      <workItem from="1613832668230" duration="97000" />
+      <workItem from="1613833532265" duration="1167000" />
     </task>
     <task id="LOCAL-00001" summary="完成了挂号情况的基本页面">
       <created>1613137883376</created>
@@ -223,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613794746426</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="大体我负责的前端都完成了">
+      <created>1613826652835</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1613826652835</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,17 +260,18 @@
     <MESSAGE value="第一种方案：用redux，改造失败，不同页面切换时reducer会消失" />
     <MESSAGE value="用session完成了新建帖子后帖子的正常使用，页面返回也正常呈现帖子" />
     <MESSAGE value="完成了个人资料页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了个人资料页面" />
+    <MESSAGE value="大体我负责的前端都完成了" />
+    <option name="LAST_COMMIT_MESSAGE" value="大体我负责的前端都完成了" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613815330039">
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613830213316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1613815330039" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1613808182569">
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1613830213316" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1613831912873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1613808182569" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1613831912873" />
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1613650196405">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

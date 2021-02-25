@@ -86,7 +86,10 @@ addXiaoLou = (ev) => {
     let oldAuthor=clonedNode.getElementsByTagName("h2");
     oldAuthor[0].innerText="钟小山";
     console.log("小楼：oldAuthor[0].innerText:"+oldAuthor[0].innerText);
-
+//修改新节点的头像
+    let oldPic=clonedNode.getElementsByTagName("img");
+    oldPic[0].src="images/blog/tst-auth2.jpg";
+    console.log("小楼：oldPic[0].innerText:"+oldPic[0].src);
 
     //如果是从空白页开始，则那个子回复是设置为不可见的
     clonedNode.style.display="block";

@@ -3744,7 +3744,6 @@ Testimonial Style
     width: 693px;
     margin: 0 auto;
     padding: 3px;
-    /*background-color: #fff*/
 }
 
 .testimonials-section .gray {
@@ -4001,8 +4000,6 @@ Testimonial Style
 .testimonials-section .mes_r .edu2 {
     width: 355px;
     padding-right: 30px;
-    /*display: flex;*/
-    /*height: 200px;*/
 }
 
 .testimonials-section .mes_r .edu2 span {
@@ -4041,159 +4038,6 @@ Testimonial Style
     padding-left: 25px;
 }
 
-/*.testimonials-section {*/
-/*    background-color: #1f3d9d;*/
-/*    text-align: center;*/
-/*    padding: 90px 0 85px;*/
-/*    position: relative;*/
-/*}*/
-
-/*.testimonials-section:before {*/
-/*    background-color: hsla(226, 67%, 37%, 0.95);*/
-/*    content: "";*/
-/*    height: 100%;*/
-/*    left: 0;*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*}*/
-
-/*@media (max-width: 991px) {*/
-/*    .testimonials-section {*/
-/*        padding: 80px 0 75px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 767px) {*/
-/*    .testimonials-section {*/
-/*        padding: 70px 0 65px;*/
-/*    }*/
-/*}*/
-
-/*.testimonials-grids {*/
-/*    position: relative;*/
-/*}*/
-
-/*.testimonials-grids:before {*/
-/*    position: absolute;*/
-/*    font-family: 'FontAwesome';*/
-/*    content: "\f10e";*/
-/*    font-size: 66px;*/
-/*    bottom: 112px;*/
-/*    transform: rotate(12deg);*/
-/*    color: #fff;*/
-/*    right: 25%;*/
-/*    opacity: 0.2;*/
-/*}*/
-
-/*.testimonials-section .pattern {*/
-/*    width: 68%;*/
-/*    height: 100%;*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 0;*/
-/*    -webkit-transform: translateX(-50%);*/
-/*    -moz-transform: translateX(-50%);*/
-/*    -o-transform: translateX(-50%);*/
-/*    -ms-transform: translateX(-50%);*/
-/*    transform: translateX(-50%);*/
-/*}*/
-
-/*.testimonials-section .pattern > span {*/
-/*    background: rgba(255, 255, 255, 0.12);*/
-/*    height: 100%;*/
-/*    left: 0;*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    width: 1px;*/
-/*}*/
-
-/*.testimonials-section .pattern > span:nth-child(2) {*/
-/*    left: 25%;*/
-/*}*/
-
-/*.testimonials-section .pattern > span:nth-child(3) {*/
-/*    left: 50%;*/
-/*}*/
-
-/*.testimonials-section .pattern > span:nth-child(4) {*/
-/*    left: 75%;*/
-/*}*/
-
-/*.testimonials-section .pattern > span:nth-child(5) {*/
-/*    left: 100%;*/
-/*}*/
-
-/*.testimonials-section .quote p {*/
-/*    color: #fff;*/
-/*    font-size: 16px;*/
-/*    font-style: italic;*/
-/*    font-weight: 500;*/
-/*    letter-spacing: 0.4px;*/
-/*    line-height: 30px;*/
-/*    margin-bottom: 2.5em;*/
-/*}*/
-
-/*.testimonials-section .client-pic {*/
-/*    max-width: 80px;*/
-/*    margin: 0 auto;*/
-/*}*/
-
-/*.testimonials-section .client-pic img {*/
-/*    width: auto;*/
-/*    border: 2px solid #fff;*/
-/*    border-radius: 50%;*/
-/*}*/
-
-/*.testimonials-section .client-info h4 {*/
-/*    color: #fff;*/
-/*    font-size: 18px;*/
-/*    font-weight: 600;*/
-/*    text-transform: capitalize;*/
-/*    margin: 9px 0;*/
-/*}*/
-
-/*.testimonials-section .client-info h4 span {*/
-/*    font-size: 13px;*/
-/*    font-size: 0.86667rem;*/
-/*    color: #828180;*/
-/*}*/
-
-/*.testimonials-section .client-info small {*/
-/*    font-size: 12px;*/
-/*    text-transform: uppercase;*/
-/*    font-weight: 600;*/
-/*    color: #ddd;*/
-/*}*/
-
-/*.testimonials-section .owl-theme .owl-controls {*/
-/*    margin-top: 20px;*/
-/*}*/
-
-/*.testimonials-section .owl-theme .owl-controls .owl-nav [class*=owl-] {*/
-/*    background: transparent;*/
-/*    width: 45px;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*}*/
-
-/*.testimonials-section .owl-theme .owl-controls .owl-nav [class*=owl-] i:before {*/
-/*    font-size: 30px;*/
-/*    font-size: 2rem;*/
-/*    color: #b1b1b1;*/
-/*}*/
-
-/*.testimonials-section .owl-theme .owl-controls .owl-nav [class*=owl-]:hover i:before {*/
-/*    color: #ffbd34;*/
-/*}*/
-
-/*.testimonials-section .owl-theme .owl-controls .owl-nav .owl-prev {*/
-/*    margin-right: 35px;*/
-/*}*/
-
-/*--------------------------------------------------------------
-模态框
-----------------------------------------------------------------*/
 /*模态框*/
 .modal {
     background-color: rgba(0, 0, 0, 0);
@@ -4216,7 +4060,69 @@ Testimonial Style
     margin: auto;
 }
 
-
+/*消息界面*/
+.talk_con {
+    width: 600px;
+    height: 500px;
+    border: 1px solid #666;
+    margin: 50px auto 0;
+    background: #f9f9f9;
+}
+.talk_show {
+    width: 580px;
+    height: 420px;
+    border: 1px solid #666;
+    background: #fff;
+    margin: 10px auto 0;
+    overflow: auto;
+}
+.atalk {
+    margin: 10px;
+}
+.atalk span {
+    display: inline-block;
+    background: #0181cc;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 10px;
+}
+.btalk {
+    margin: 10px;
+    text-align: right;
+}
+.btalk span {
+    display: inline-block;
+    background: #ef8201;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 10px;
+}
+.talk_input {
+    width: 580px;
+    margin: 10px auto 0;
+    display: flex;
+}
+.whotalk {
+    width: 80px;
+    height: 30px;
+    float: left;
+    outline: none;
+}
+.talk_word {
+    width: 420px;
+    height: 26px;
+    padding: 0px;
+    float: left;
+    margin-left: 10px;
+    outline: none;
+    text-indent: 10px;
+}
+.talk_sub {
+    width: 56px;
+    height: 30px;
+    float: left;
+    margin-left: 10px;
+}
 /*--------------------------------------------------------------
 Blog Style
 ----------------------------------------------------------------*/
